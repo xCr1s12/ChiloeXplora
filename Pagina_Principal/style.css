@@ -1,28 +1,26 @@
-html,body {
+html,body{
     background-color: #121629 ;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 100%;
+    align-items: flex-start;
     font-family: "Spinnaker",sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    min-height: 100vh;
  }
+
 ul {
     list-style: none;
     padding:0;
     margin:0;
-    margin: top 5px;
+    margin-top: 10px;
 }
 ul li {
     display: inline;
 }
-#Textos {
-       margin-left: 50px;
-}
 .boton-menu-superior {  
     align-items: flex-start;
-    margin-top:5px;
     margin-left:150px ;
     position: relative;
     padding: 10px 15px;
@@ -42,15 +40,19 @@ ul li {
 
 }
 hr {
-    width: 1250px;
+    width: 100%;
     height: 0.75px;
     background: #A7A9BE;
     border: none;
     margin-top: 10px;
 }
+
 #Titulo{
     font-family:"Spinnaker",sans-serif;
     color:#F9BC60;
+    align-self: flex-start;
+
+
 }
 #Acerca_de{
     width: 108px;
@@ -60,9 +62,16 @@ hr {
     font-size: 23px;
     text-align: left;    
 }
-
+.textos-pag1{
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .Primer_texto{
-    width: 341px;
+    text-align: center;
+    width: 400px;
 	height: 135px;
 	padding: 8px 8px 8px 8px;
 	background: #EBEBEB40;
@@ -72,6 +81,9 @@ hr {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.3;
-	text-align: center;
 }
-
+#img-circ {
+    width: 800px;
+    height: 430px;
+    margin-left: 70px;
+}
