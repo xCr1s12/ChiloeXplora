@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(150deg,#095169,#0c0636,#059b9a, #121629);
+    background-image: url(https://palafitocucaolodge.com/wp-content/uploads/2022/07/muelle-del-tiempo-palafito-cucao-chiloe.jpg);
     height: 150dvh;
 
 }
@@ -37,7 +38,23 @@ li {
 
 }
 
+.boton-menu-superior:hover {
+    transition: 0.1s;
+    background: #F9BC60;
+    animation-duration: 0.2s;
+    box-shadow: 0 0 10px #F9BC60;
+    transition-delay: 0.5ms;
+}
 
+hr {
+    
+    width: 100%;
+    height: 0.75px;
+    background: silver;
+    border: none;
+    margin-top: 10px;
+
+}
 
 .inicio_de_sesion {
 
