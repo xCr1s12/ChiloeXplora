@@ -16,6 +16,11 @@ html,body{
     justify-content: flex-start;
     align-items: center;
 }
+#Iniciar_Sesion{
+    border-radius: 5px;
+    background-color: #F9BC60;
+
+}
 
 ul {
     list-style: none;
