@@ -66,12 +66,13 @@ hr {
 
 .inicio_de_sesion {
 
+    
     transition: 1s;
     position: absolute;
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 500px;
 }
 
 .inicio_de_sesion h1 {
@@ -96,7 +97,7 @@ form .correo {
 }
 
 form .c_e {
-margin-top: 5px;
+    margin-top: 5px;
     background: #121629;
     color: white;
     border-color: white;
@@ -111,7 +112,10 @@ margin-top: 5px;
 
 form .pasword {
 
-    margin-top: 30px;
+    font: bold 10px "Spinnaker";
+    text-align: left;
+    color: #F9BC60;
+    margin-top: 20px;
 
 }
 form .c_c {
@@ -127,12 +131,7 @@ form .c_c {
 
 }
 
-form .olvido {
-    font-size:x-small;
-    margin-top: 5px;
-    
 
-}
 
 form .boton-1 {
     background: #F9BC60;
@@ -146,8 +145,15 @@ form .boton-1 {
     margin-left: 50px;
 }
 
+form .olvido {
+    font-size:x-small;
+    margin-top: 5px;
+}
+
+
+
 form .registrarse{
-    margin-top: 10px;
+    margin-top: 5px;
     font: bold 9px "Arial";
     color: #F9BC60;
 }
