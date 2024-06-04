@@ -1,0 +1,95 @@
+body {
+    font-family: "Spinnaker";
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg,#095169,#0c0636,#059b9a, #121629);
+    height: 150dvh;
+
+}
+
+.inicio_de_sesion {
+
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.inicio_de_sesion h1 {
+   
+    color: #F9BC60;
+    text-align: left;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #F9BC60 ;
+}
+
+.inicio_de_sesion form {
+
+    padding: 0 40px;
+    
+}
+
+form .correo {
+    font: bold 10px "Spinnaker";
+    text-align: left;
+    color: #F9BC60;
+    margin-top: 20px;
+}
+
+form .c_e {
+margin-top: 5px;
+    background: #121629;
+    color: white;
+    border-color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    font: bold 12px "Arial";
+
+
+}
+
+
+form .pasword {
+
+    margin-top: 30px;
+
+}
+form .c_c {
+    margin-top: 5px;
+    background: #121629;
+    color: white;
+    border-color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    font: bold 12px "Arial";
+
+
+}
+
+form .olvido {
+    font-size:x-small;
+    margin-top: 5px;
+    
+
+}
+
+form .boton-1 {
+    background: #F9BC60;
+    color: white;
+    border-color: white;
+    height: 30px;
+    width: 110px;
+    border-radius: 10px;
+    font: bold 12px "Spinnaker";
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+form .registrarse{
+    margin-top: 10px;
+    font: bold 9px "Arial";
+    color: #F9BC60;
+}
