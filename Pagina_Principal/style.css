@@ -126,18 +126,6 @@ hr {
     margin-left: 2%;
 }
 #img-circ {
-<<<<<<< HEAD
-    width: 800px;
-    height: 430px;
-    margin-left: 70px;
-}
-
-#inicio_de_sesion {
-    align-items: flex-start;
-    margin-left: 300px;
-
-}
-=======
     width: 65%;;
     height: auto;
     margin-left: 5%;
@@ -167,4 +155,3 @@ hr {
 .prim-seccion {
     margin-top: 187px ;
 }
->>>>>>> 09572f8008917843e26d18b8ab5c962c1bde3f29
