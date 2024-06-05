@@ -9,6 +9,7 @@ html,body{
     width: 100%;
     min-height: 100vh;
  }
+<<<<<<< HEAD
 .Encabezado {
     width: 90%;
     margin-left: 10%;
@@ -21,13 +22,18 @@ html,body{
     background-color: #F9BC60;
 
 }
+=======
+>>>>>>> 88bfc05a108712c9f1f28152360a4e82af82cc1f
 
 ul {
     list-style: none;
     padding:0;
     margin:0;
     margin-top: 10px;
+<<<<<<< HEAD
     margin-left: 90px;
+=======
+>>>>>>> 88bfc05a108712c9f1f28152360a4e82af82cc1f
 }
 ul li {
     margin-left: 15px;
@@ -68,8 +74,12 @@ hr {
     font-family:"Spinnaker",sans-serif;
     color:#F9BC60;
     align-self: flex-start;
+<<<<<<< HEAD
     margin-left: 50px;
     margin-bottom: 6px;
+=======
+
+>>>>>>> 88bfc05a108712c9f1f28152360a4e82af82cc1f
 
 }
 #Acerca_de{
@@ -82,6 +92,7 @@ hr {
     text-align: center;
     margin-left: 100px;    
 }
+<<<<<<< HEAD
 .Titulos-AT {
     align-items: center;
     margin-left: 30px;
@@ -90,6 +101,11 @@ hr {
 .textos-img{
     width: 2%;
     margin-left: 5%;
+=======
+.textos-pag1{
+    width: 90%;
+    margin-left: 10%;
+>>>>>>> 88bfc05a108712c9f1f28152360a4e82af82cc1f
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -106,6 +122,14 @@ hr {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.3;
+<<<<<<< HEAD
+=======
+}
+#img-circ {
+    width: 800px;
+    height: 430px;
+    margin-left: 70px;
+>>>>>>> 88bfc05a108712c9f1f28152360a4e82af82cc1f
 }
 #img-circ {
     width: 940px;
