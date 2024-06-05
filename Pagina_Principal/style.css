@@ -9,21 +9,54 @@ html,body{
     width: 100%;
     min-height: 100vh;
  }
+.Encabezado {
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#Iniciar_Sesion{
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    background-color: #F9BC60;
+    color: #FFFFFE;
+    font-family: "Spinnaker";
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 10px;
+
+}
+#Iniciar_Sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+
+}
 
 ul {
     list-style: none;
     padding:0;
     margin:0;
     margin-top: 10px;
+    margin-left: 90px;
 }
 ul li {
+    font-size: 15px;
+    font-family: "Spinnaker";
+    margin-left: 15px;
     display: inline;
 }
 .boton-menu-superior {  
     align-items: flex-start;
     margin-left:150px ;
     position: relative;
-    padding: 10px 15px;
+    padding: 15px 15px;
     color: #fff;
     letter-spacing: 2px;
     font-size: medium;
@@ -42,47 +75,58 @@ ul li {
 hr {
     width: 100%;
     height: 0.75px;
-    background: #A7A9BE;
+    background: silver;
     border: none;
-    margin-top: 10px;
+    margin-top: 15px;
 }
-
+.textos-img{
+    height: auto;
+    width: 95%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
 #Titulo{
+    height: 48px;
+    width: 218px;
+    font-size: 40px;
     font-family:"Spinnaker",sans-serif;
     color:#F9BC60;
     align-self: flex-start;
-
+    margin-left: 22%;
+    margin-bottom: 6px;
 
 }
 #Acerca_de{
+    white-space: nowrap;
+    margin-bottom: 17px;
+    margin-top: 6px;
     width: 108px;
     height: 30px;
     color: #FFFFFE;
     font-family: "Spinnaker";
-    font-size: 23px;
-    text-align: left;    
-}
-.textos-pag1{
-    width: 90%;
-    margin-left: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 35%;    
 }
 .Primer_texto{
+    margin-top: 17px;
     text-align: center;
-    width: 400px;
-	height: 135px;
+    width: 430px;
+	height: 184px;
 	padding: 8px 8px 8px 8px;
 	background: #EBEBEB40;
 	color: #FFFFFF;
 	border-radius: 15px 15px 15px 15px;
 	font-family: "Spinnaker";
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.3;
+    margin-left: 2%;
 }
 #img-circ {
+<<<<<<< HEAD
     width: 800px;
     height: 430px;
     margin-left: 70px;
@@ -93,3 +137,34 @@ hr {
     margin-left: 300px;
 
 }
+=======
+    width: 65%;;
+    height: auto;
+    margin-left: 5%;
+}
+#Buscar {
+    letter-spacing: 2px;
+    width: 112px;
+    height: 48px;
+    padding: 0px 10px 0px 10px;
+    background: #F9BC60;
+    color: #FFFFFF;
+    border-color: #121629;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 24px 24px 24px 24px;
+    font-family: "Spinnaker";
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 35%; 
+    margin-top: 17px;
+}
+#Buscar:hover {
+    cursor: pointer;
+}
+
+.prim-seccion {
+    margin-top: 187px ;
+}
+>>>>>>> 09572f8008917843e26d18b8ab5c962c1bde3f29
