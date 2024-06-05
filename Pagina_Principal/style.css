@@ -10,11 +10,21 @@ html,body{
     min-height: 100vh;
  }
 .Encabezado {
+    margin-top: auto;
+    padding: 10px 0;
     width: 90%;
-    margin-left: 10%;
+    margin-left: 5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+#Logo01 {
+    border: 1px;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin:0;
 }
 #Iniciar_Sesion{
     padding: 5px 5px 5px 5px;
@@ -27,8 +37,8 @@ html,body{
     font-weight: 400;
     font-size: 15px;
     text-align: center;
-    margin-left: 20%;
-    margin-top: 10px;
+    margin-left: auto;
+    margin-top: 2px;
 
 }
 #Iniciar_Sesion:hover {
@@ -40,11 +50,11 @@ html,body{
 }
 
 ul {
+    white-space: nowrap;
     list-style: none;
     padding:0;
-    margin:0;
-    margin-top: 10px;
-    margin-left: 90px;
+    margin-top: 1%;
+    margin-left: 10%;
 }
 ul li {
     font-size: 15px;
@@ -73,16 +83,17 @@ ul li {
 
 }
 hr {
+
     width: 100%;
     height: 0.75px;
     background: silver;
     border: none;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 .textos-img{
     height: auto;
     width: 95%;
-    margin-left: 3%;
+    margin-left: 5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;  
@@ -126,9 +137,10 @@ hr {
     margin-left: 2%;
 }
 #img-circ {
+    margin-top: 25px;
     width: 65%;;
     height: auto;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 #Buscar {
     letter-spacing: 2px;
@@ -154,4 +166,32 @@ hr {
 
 .prim-seccion {
     margin-top: 187px ;
+}
+#SEGUNDA-PARTE-PAG-01{
+    width: 100%;
+    height: 1000px;
+    align-content: flex-start;
+}
+#Tittle02 {
+    position: top;
+    margin-left: 40%;
+    height: 48px;
+    width: 218px;
+    font-size: 40px;
+    font-family:"Spinnaker",sans-serif;
+    color:#F9BC60;
+}
+.items{
+    margin-top: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#calendario{
+    color: #fff;
+    width: 430px;
+	height: 184px;
+	background: #EBEBEB40;
+	border-radius: 50%;
+    margin-left: 2%;
 }
