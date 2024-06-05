@@ -90,6 +90,11 @@ hr {
     border: none;
     margin-top: 5px;
 }
+#PRIMERA-PARTE-PAG-01 {
+
+    display: flex;
+    flex-direction: row;
+}
 .textos-img{
     height: auto;
     width: 95%;
@@ -140,7 +145,7 @@ hr {
     margin-top: 25px;
     width: 65%;;
     height: auto;
-    margin-left: 2%;
+    margin-left: 1%;
 }
 #Buscar {
     letter-spacing: 2px;
@@ -182,16 +187,39 @@ hr {
     color:#F9BC60;
 }
 .items{
-    margin-top: 30%;
+    height: 350px;
+    width: 100%;
+    margin-top: 5%;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 #calendario{
-    color: #fff;
-    width: 430px;
-	height: 184px;
+    margin-left: 2% ;
+    width: 90px;
+	height: 90px;
 	background: #EBEBEB40;
 	border-radius: 50%;
+    align-items: center;
+    align-self: flex-start;
+}
+#rutas {
     margin-left: 2%;
+    width: 90px;
+	height: 90px;
+	background: #EBEBEB40;
+	border-radius: 50%;
+    align-items: center;
+    align-self: flex-start;
+}
+#notas {
+    margin-left: 2%;
+    width: 90px;
+    height: 90px;
+    background: #EBEBEB40;
+    border-radius: 50%;
+    margin-left: 0;
+    align-items: center;
+    align-self: flex-start;
 }
