@@ -25,8 +25,8 @@ html,body{
     margin-left: 3%;
     border: 1px;
     display: inline;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 ul {
     white-space: nowrap;
@@ -78,7 +78,7 @@ hr {
     height: 0.75px;
     background: #fff;
     border: none;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 /*----------------------Encabezado-------------*/ 
 
