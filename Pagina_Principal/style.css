@@ -9,6 +9,13 @@ html,body{
     width: 100%;
     min-height: 100vh;
  }
+ /*----------------------Encabezado-------------*/ 
+ .titulo_simple{
+    color: #F9BC60;
+ }
+ .texto_simple{
+    color: #fff;
+ }
  .Boton {
     background-color: #F9BC60;
     color: #fff;
@@ -80,7 +87,143 @@ hr {
     border: none;
     margin-top: 3px;
 }
-/*----------------------Encabezado-------------*/ 
+/*----------------------Cuerpo(textos-primera-parte)-------------*/ 
+
+
+#PRIMERA-PARTE-PAG-01 {
+
+    display: flex;
+    flex-direction: row;
+}
+#textos-img{
+    height: auto;
+    width: 95%;
+    display: flexbox;
+}
+#Textos {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 150px;
+
+}
+#Titulo{
+    margin-bottom: 1px;
+    height: 48px;
+    width: 218px;
+    font-size: 40px;
+    font-family:"Spinnaker",sans-serif;
+    color:#F9BC60;
+}
+#Acerca_de{
+    margin-bottom: 1px;
+    margin: 0 10px;
+    white-space: nowrap;
+    width: 108px;
+    height: 30px;
+    color: #FFFFFE;
+    font-family: "Spinnaker";
+    font-size: 25px;
+    text-align: center;    
+}
+#Primer_texto{
+    margin-top: 1px;
+    text-align: center;
+    width: 430px;
+	height: 184px;
+	padding: 8px 8px 8px 8px;
+	background: #EBEBEB40;
+	color: #FFFFFF;
+	border-radius: 15px 15px 15px 15px;
+	font-family: "Spinnaker";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.3;
+}
+#img-circ {
+    width: 65%;;
+    height: auto;
+}
+#Buscar {
+    margin-top: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 10px 10px 10px 10px;
+    border-color: #121629;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 24px 24px 24px 24px;
+    font-size: 20px;
+    text-align: center;
+}
+#Buscar:hover {
+    cursor: pointer;
+}
+/*----------------------Cuerpo(textos-primera-parte)-------------*/ 
 
 
 
+
+.prim-seccion {
+    margin-top: 187px ;
+}
+#SEGUNDA-PARTE-PAG-01{
+    width: 100%;
+    height: 1000px;
+}
+#items {
+    display: flex;
+    flex-direction: row;
+
+}
+.Columns_Items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Tittle02 {
+    position: top;
+    margin-left: 40%;
+    height: 48px;
+    width: 218px;
+    font-size: 40px;
+    font-family:"Spinnaker",sans-serif;
+    color:#F9BC60;
+}
+#contairner_Calendario{
+    display: flex;
+    margin-left: 25%;
+}
+#calendario{
+    width: 100px;
+	height: 100px;
+	background: #EBEBEB40;
+	border-radius: 50%;
+
+}
+
+#contairner_Rutas{
+    display: flex;
+    margin-left: 15%;
+}
+#rutas {
+    width: 100px;
+	height: 100px;
+	background: #EBEBEB40;
+	border-radius: 50%;
+
+}
+#contairner_Notas{
+    display: flex;
+    margin-left: 15%;
+}
+#notas {
+    width: 100px;
+    height: 100px;
+    background: #EBEBEB40;
+    border-radius: 50%;
+    margin-left: 0;
+
+}
