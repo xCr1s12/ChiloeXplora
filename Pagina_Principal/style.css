@@ -197,6 +197,7 @@ hr {
     height: 90px;
     width: auto;
 }
+
 .Columns_Items{
     display: flex;
     flex-direction: column;
