@@ -36,7 +36,7 @@ header {
 .boton-menu-superior {
 
     align-items: flex-start;
-    margin-left: 150px;
+    margin-left: 297px;
     position: relative;
     padding: 10px 15px;
     color: white;
@@ -159,6 +159,17 @@ form .registrarse{
     position: fixed;
     right: 120%;
     top: -56%; 
-    height: 900px;
+    height: 700px;
     width: 900px;
+    filter: blur(2px); 
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%); 
+}
+
+#fotoicono { 
+    position: absolute;
+    right: 129%;
+    top: -73%; 
+    height: 800px;
+    width: 800px;
+ 
 }
