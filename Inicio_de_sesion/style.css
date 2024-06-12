@@ -157,8 +157,7 @@ form .registrarse{
     font: bold 9px "Arial";
     color: #F9BC60;
 }
-
-#Fondo_inicio_sesion {
+#Fondo_inicio_sesion { 
     position: fixed;
     right: 120%;
     top: -56%; 
