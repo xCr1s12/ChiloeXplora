@@ -156,9 +156,9 @@ hr {
 
 .buscador {
     position: relative;
-    left: 750px;
+    left: 650px;
     top: 150px;
-    width: 700px;
+    width: 1000px;
 }
 
 #text {
@@ -168,15 +168,15 @@ hr {
     border: 0;
     outline: none;
     height: 70px;
-    width: 600px;
+    width: 800px;
     font-size: xx-large; 
 }
 
 #boton_busc {
     position: absolute;
     background-color: #F9BC60;
-    border-radius: 50px;
-    height: 70px;
+    border-radius: 50%;
+    height: 80px;
     width: 80px;
     margin-left: 10px;
     cursor: pointer;
@@ -186,8 +186,53 @@ hr {
 
     position: relative;
     top: 300px;
-    left: 600px;
-    font-size: x-large;
+    left: 200px;
     height: 400px;
-    width: 1200px;
+    width: 1600px;
 }
+
+
+a.btn_neon {
+
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #F9BC60;
+    letter-spacing: 1.5px;
+    transition: 1.5s;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 35px;
+    color: #fff;
+}
+
+a.btn_neon:hover {
+    border-radius: 15px;
+    background: #F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 20px #F9BC60, 0 0 80px #F9BC60;
+
+
+
+}
+
+.btn_neon span {
+
+    position: absolute;
+    display: block;
+
+}
+
+#span1 {
+
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#F9BC60 );
+}
+
+.btn_neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
