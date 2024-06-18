@@ -207,9 +207,9 @@ a.btn_neon {
 }
 
 a.btn_neon:hover {
-    border-radius: 15px;
+    border-radius: 20px;
     background: #F9BC60;
-    box-shadow: 0 0 10px #F9BC60, 0 0 20px #F9BC60, 0 0 80px #F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 20px #F9BC60, 0 0 20px #F9BC60;
 
 
 
@@ -236,3 +236,21 @@ a.btn_neon:hover {
     transition: 1s;
 }
 
+.textos_lugares a{
+    font-size: 40px;
+}
+
+.textos_lugares pre{
+    font-family: "Spinnaker";
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+
+}
+
+.textos_lugares img.imagen_cucao {
+
+    max-width: 100%;
+    height: auto;
+    margin-right: 0%;
+}
