@@ -1,7 +1,7 @@
-<!Doctype html> 
+<!DOCTYPE html> 
 <html lang="es-ES">
 
-<!-- HEAD DE LA PAGINA (CONTIENE TODA LA INFORMACION NO VISIBLE) !-->
+<!-- HEAD DE LA PAGINA (CONTIENE TODA LA INFORMACION NO VISIBLE) -->
 <head>
 
     <title>ChiloeXplora</title>
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+    <!-- encabezado -->
     <div id="Encabezado">
         <img id="Logo01"src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview%20(1).png?raw=true" alt="Logo">
         <header id="menu-de-cabeza-1">   
@@ -41,11 +41,12 @@
             </ul>
             
         </header>
-        <a href="#" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+        <a href="#" class="Boton" id="Iniciar_Sesion">Iniciar Sesión</a>
     </div>
-    <hr>
+    <hr> <!-- Linea divisora -->
     
 
+    <!-- Buscador -->
     <div class="buscador">
         <input id="text" type="text"  placeholder="Buscar lugares...">
             <button id="boton_busc">
@@ -53,33 +54,46 @@
             </button>  
     </div>
     
-    <div class="textos_lugares">
-        <a href="link" class="btn_neon">
-            <span id="span1"></span>    
-            Cucao
-        </a>
+   
+    <!-- primer Contenedor general para el lugar "cucao" -->
+    <div class="contenedor">   
+        <div class="boton_y_texto"> <!-- para el texto -->
+            <a href="cucao" class="btn_neon"> <!-- boton de link para "ir a notas cucao" -->
+                <span id="span1"></span>    
+                Cucao
+            </a>
+            
+            <!-- texto que va dentro de "cucao" -->
+         <pre>
+         Cucao, una pintoresca aldea ubicada en la isla de Chiloé, en el sur de Chile.
+         Es un destino turístico que cautiva con su belleza natural y su rica cultura local
+         con una ubicación privilegiada en el borde del Parque Nacional Chiloé 
+         y a orillas del majestuoso Lago Cucao.
+         Este rincón encantador ofrece una variedad de atracciones para los visitantes.</pre>
+        </div>
+        
+        <img src="https://palafitocucaolodge.com/wp-content/uploads/2022/07/muelle.de_.las_.almas-palafito.cucao_.chiloe.jpg" alt="foto muelle" class="imagen_muelle">
 
-     <pre> 
-     Cucao, una pintoresca aldea ubicada en la isla de Chiloé, en el sur de Chile.
-     Es un destino turístico que cautiva con su belleza natural y su rica cultura local
-     con una ubicación privilegiada en el borde del Parque Nacional Chiloé 
-     y a orillas del majestuoso Lago Cucao.
-     Este rincón encantador ofrece una variedad de atracciones para los visitantes.</pre>
+    </div>
 
-     <img src="cucao.png" alt="">
+    <!-- segundo Contenedor general para el lugar "proximante" -->
+    <div class="contenedor1">   
+        <div class="boton_y_texto"> <!-- para el texto -->
+            <a href="proximamente..." class="btn_neon"> <!-- boton de link para "ir a notas cucao" -->
+                <span id="span1"></span>    
+                Proximamente...
+            </a>
+            
+            <!-- texto que va dentro de "cucao" -->
+         <pre>
+         Descripcion de lugar </pre>
+        </div>
+        
+        <div class="mini_contenedor"> 
+
+        </div>
 
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-</body>
+</body> 
