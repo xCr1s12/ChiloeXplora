@@ -183,24 +183,23 @@ hr {
     align-self: center;
     align-items: center;
 }
-#LagoHuillinco{
+.Item_Img{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 240px;
     height: 330px;
+}
+
+
+
+#Lugar_1 {
+    display:flex;
+    flex-direction: flex-start;
+}
+#Lugar_2 {
     align-self: center;
 }
-
-
-
-#Lugar1 {
-    margin-right: 5%;
-}
-#Lugar2 {
-    align-self: center;
-}
-#Lugar3 {
-    margin-left: 5%;
+#Lugar_3 {
 }
 
