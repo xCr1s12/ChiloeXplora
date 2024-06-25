@@ -1,0 +1,300 @@
+/* Comentario */
+html,body{
+    background-color: #121629 ;
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Spinnaker",sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+ }
+ .Boton {
+    background-color: #F9BC60;
+    color: #fff;
+    font-family: "Spinnaker";
+ }
+
+ /* Encabezado */
+#Encabezado {
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#Logo01 {
+    margin-left: 3%;
+    border: 1px;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding:0;
+}
+ul li {
+    font-size: 15px;
+    font-family: "Spinnaker";
+    display: inline;
+}
+
+/* menu superior */
+.boton-menu-superior {
+    margin-left: 70%;
+    align-items: flex-start;
+    position: relative;
+    padding: 12px 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: medium;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.boton-menu-superior:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+}
+#Iniciar_Sesion{
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+#Iniciar_Sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
+
+/* Linea divisora */
+hr {
+    width: 100%;
+    height: 0.75px;
+    background: #fff;
+    border: none;
+    margin-top: 3px;
+}   
+
+/* Iniciar sesión */
+.Boton {
+    background-color: #F9BC60;
+    color: #fff;
+    font-family: "Spinnaker";
+ }
+ #Encabezado {
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#Logo01 {
+    margin-left: 3%;
+    border: 1px;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding:0;
+}
+ul li {
+    font-size: 15px;
+    font-family: "Spinnaker";
+    display: inline;
+}
+.boton-menu-superior {
+    margin-left: 70%;
+    align-items: flex-start;
+    position: relative;
+    padding: 12px 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: medium;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.boton-menu-superior:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+}
+#Iniciar_Sesion{
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+#Iniciar_Sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
+
+/*  Linea divisora        */
+hr {
+    width: 100%;
+    height: 0.75px;
+    background: #fff;
+    border: none;
+    margin-top: 3px;
+}
+
+/* ######################################### DIVISION #########################################   */
+
+/* CONTENEDORES PARA LOS LUGARES:   */
+
+/*  Contenedor de "Cucao" ( listo) */ 
+.contenedor{
+    margin-bottom: 10%;
+    position: relative;
+    top: 200px;
+    left: 0px;
+    height: 400px;
+    width: 1500px;
+    display: flex; /* <-- crea una cajita */
+    justify-content: space-between; /*<-- hace un espacio entre los elementos del flex      */
+    
+}
+.titulito{ /* esto solo fue para hacer un margen con el texto. (listo) */
+    margin-bottom: 40px;
+}
+
+/*contenedor del texto completo*/
+.boton_y_texto{
+
+    margin-left: 150px;
+}
+
+/*  Texto de "Cucao" (listo) */ 
+.boton_y_texto h1{ 
+    font-weight:bold;
+    font-size: 40px;
+    color: #F9BC60;
+    margin-left: 0px;
+    
+}
+
+.hr_chico{ /* es el hr que acompaña el titulo*/
+    background:black;
+    width: 500px;
+    margin-left: 0;
+    height: 2px;
+}
+
+/* Texto del titulo "cucao" */
+
+.boton_y_texto p{
+    font-size: 25px;
+    color: #fff;
+    font-family: "Spinnaker";
+    line-height: 1.3;
+    margin: 0;
+}
+
+
+.imagen_iglesia{
+
+    height: 500px;
+    width: 1000px;
+
+}  
+
+
+/*  Contenedor de "Textos lugares"  */
+.contenedor1{
+
+    margin-bottom: 10%;
+    position: relative;
+    top: 350px;
+    left: 200px;
+    height: 400px;
+    width: 1500px;
+    display: flex; /* <-- crea una cajita */
+    justify-content: space-between; /*<-- hace un espacio entre los elementos del flex      */
+    
+}
+/*  Titulo de "cucao"  */
+.boton_y_texto1 h1{
+    font-weight:bold;
+    font-size: 40px;
+    color: #F9BC60;
+    margin-left: 100px;
+
+}
+
+/*  descripción de "Proximamente"  */
+.boton_y_texto1 p{
+    font-size: 25px;
+    color: #fff;
+    font-family: "Spinnaker";
+    margin-left: 70px;
+    line-height: 1.3;
+}
+
+
+
+/* Contenedor de "proximamente" */
+.mini_contenedor{
+
+    background-color: #292828;
+    height: 399px;
+    width: 533px;
+    border-radius: 2%;
+}
+
+.hrr{
+    position: absolute;
+
+
+}
+/* ######################################### DIVISION #########################################   */
+
+
+/* CONTENIDO DEL PIE DE PÁGINA   */
+
+.pie_de_pagina{
+    position: relative;
+    margin-top: 500px;
+}
+
+#pie_pagina{
+    margin-left: 20px;
+    height: 150px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+#contactanos {
+    margin-top: 10px;
+    line-height: 0.5;
+    margin-left: 20px;
+}
+#info {
+    margin-left: 60px;
+}
