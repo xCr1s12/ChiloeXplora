@@ -36,7 +36,7 @@ header {
 .boton-menu-superior {
 
     align-items: flex-start;
-    margin-left: 150px;
+    margin-left: 297px;
     position: relative;
     padding: 10px 15px;
     color: white;
@@ -64,96 +64,111 @@ hr {
     margin-top: 15px;
 }
 
-.inicio_de_sesion {
+.crear_cuenta {
 
-    
+    margin: 0;
+    padding: 0;
     transition: 1s;
     position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    width: 500px;
+    top: 150px;
+    left: 100px;
 }
 
-.inicio_de_sesion h1 {
+ h1 {
    
     color: #F9BC60;
     text-align: left;
-    padding: 0 0 20px 0;
+    padding: 0px 200px 30px 0;
     border-bottom: 1px solid #F9BC60 ;
 }
 
-.inicio_de_sesion form {
 
-    padding: 0 40px;
-    
+form .b_g {
+
+    margin-top: 20px;
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.correo label{ 
+
+    margin-left: 22px;
+    color: #F9BC60;
+
 }
 
 form .correo {
-    font: bold 10px "Spinnaker";
-    text-align: left;
-    color: #F9BC60;
-    margin-top: 20px;
+
+    margin-top: 90px;
+    color: #fff;
+    margin-left: 0px;
+
 }
 
 form .c_e {
-    margin-top: 5px;
-    background: #121629;
-    color: white;
-    border-color: white;
-    height: 30px;
-    width: 200px;
+
+    color: #fff;
+    font-size: medium;
+    background-color: #121629;
     border-radius: 10px;
-    font: bold 12px "Arial";
-
-
+    border-color: #fff;
+    border-width: 2px;
+    width: 300px;
+    height: 40px;
 }
 
+.password label{
 
-form .pasword {
-
-    font: bold 10px "Spinnaker";
-    text-align: left;
-    color: #F9BC60;
-    margin-top: 20px;
-
-}
-form .c_c {
-    margin-top: 5px;
-    background: #121629;
-    color: white;
-    border-color: white;
-    height: 30px;
-    width: 200px;
-    border-radius: 10px;
-    font: bold 12px "Arial";
-
-
-}
-
-
-
-form .boton-1 {
-    background: #F9BC60;
-    color: white;
-    border-color: white;
-    height: 30px;
-    width: 110px;
-    border-radius: 10px;
-    font: bold 12px "Spinnaker";
-    margin-top: 25px;
-    margin-left: 50px;
-}
-
-form .olvido {
-    font-size:x-small;
-    margin-top: 5px;
-}
-
-
-
-form .registrarse{
-    margin-top: 5px;
-    font: bold 9px "Arial";
+    margin-left: 22px;
     color: #F9BC60;
 }
+
+form .password{
+
+    margin-top: 30px;
+    color: #fff;
+    margin-left: 0px;
+}
+
+form .c_c{
+
+    color: #fff;
+    font-size: medium;
+    background-color: #121629;
+    border-radius: 10px;
+    border-color: #fff;
+    border-width: 2px;
+    width: 300px;
+    height: 40px;
+}
+
+.notis {
+
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+form .texto_noti{
+
+    color: #F9BC60;
+    width: 92%;
+    font-size: small;
+    margin-left: 0;
+
+}
+
+form #checkbox{
+    
+    margin-left: 15px;
+    width: 7%;
+    height: 20px;
+    border-radius: 10px;
+
+}
+
+form .boton-1{
+
+    
+ }

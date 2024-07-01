@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -37,31 +38,48 @@
 
     <hr>
 
-    <div class="inicio_de_sesion">
-        <h1> Crear tu cuenta </h1>
+    <div class="crear_cuenta">
+        <h1> Crea tu cuenta </h1>
         <form method="post">
-    
+            
+            <div class="g-mail">
+                <i class='bx bxl-google' style='color:#f9bc60'  ></i>
+                <button class="b_g" type="button"> <strong>Continuar con Google </strong> </button>
+
+            </div>
+
+
             <div class="correo">
                 <label>Correo Electrónico</label>
                 <br>
+                <i class='bx bx-envelope' style='color:#f9bc60'></i>
                 <input class ="c_e" type="email" required placeholder="Ingrese su Correo ">
+                
                
             </div>
     
-            <div class="pasword">
-            <label>Contraseña</label>
-            <br>
-            <input class="c_c" type="password" required placeholder="Ingrese su Contraseña">
+
+            <div class="password">
+                <label>Contraseña</label>
+                <br>
+                <i class='bx bxs-lock-alt' style='color:#f9bc60'  ></i>
+                <input class="c_c" type="password" required placeholder="Ingrese su Contraseña">
             
             </div> 
-
-        
-         </div>
+    
+            <div class="notis"> 
+                
+                <input type="checkbox" name="opcion" id="checkbox">
+                <p class="texto_noti">Quiero recibir noticias, actualizaciones y ofertas.</p>
+            </div>
 
             <div>
-                <input class="boton-1" type="submit" value="Iniciar sesión">
+                <input class="boton-1" type="submit" value="CREAR CUENTA">
             </div>
             
+            <div class="registrarse">
+                ¿Todavía no tiene una cuenta? <a href="#" style="color: white;">Regístrese aquí </a>
+    
             </div>
     
             </form>
