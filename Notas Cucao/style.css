@@ -231,25 +231,32 @@ hr {
 #hr2{
     width: 1030px;
     margin-top: 200px;
+    
 }
 
 /* ############## CONTENEDOR DEL BOTON LUGARES RECOMENDADOS ############################# */
 
 #contenedor_lugares_recomendados{
 
-    position: relative;
-    top: -15px;
-    height: 50px;
-    width: 300px;
-    left: 1300px;
+    position: relative; 
+    top: -30px;
+    height: 100px;
+    width: 400px;
+    left: 1200px;
 }
 
 
-/* ####################  Boton para ir a Lugares Recomendados ###########################*/
-.boton_lugares_r {
+/*  Boton para ir a Lugares Recomendados */
+#boton_lr{
+    background-color: #F9BC60;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    font-family: "Spinnaker";
+    font-weight: bold;
+    color: #fff;
+    font-size:xx-large;
     
-    justify-content: center;
-
 }
 
 

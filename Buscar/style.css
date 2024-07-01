@@ -172,9 +172,9 @@ hr {
 .buscador {
     position: relative;
     justify-content: center;
-    left: 500px;
-    top: 150px;
-    width: 1000px;
+    left: 550px;
+    top: 100px;
+    width: 800px;
 }
 
 #text {
@@ -184,7 +184,7 @@ hr {
     border: 0;
     outline: none;
     height: 70px;
-    width: 800px;
+    width: 700px;
     font-size: xx-large; 
 }
 
@@ -207,12 +207,12 @@ hr {
 
 /*  Contenedor de "Textos lugares"  */
 .contenedor{
-    margin-bottom: 10%;
+    margin-bottom: 6%;
     position: relative;
-    top: 350px;
-    left: 200px;
-    height: 400px;
-    width: 1800px;
+    top: 250px;
+    left: 100px;
+    height: 350px;
+    width: 1600px;
     display: flex; /* <-- crea una cajita */
     justify-content: space-between; /*<-- hace un espacio entre los elementos del flex      */
     
@@ -247,10 +247,10 @@ hr {
 
     margin-bottom: 10%;
     position: relative;
-    top: 350px;
-    left: 200px;
+    top: 250px;
+    left: 100px;
     height: 400px;
-    width: 1800px;
+    width: 1600px;
     display: flex; /* <-- crea una cajita */
     justify-content: space-between; /*<-- hace un espacio entre los elementos del flex      */
     
