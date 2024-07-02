@@ -179,13 +179,13 @@ form .boton-1{
     height: 700px;
     width: 1100px;
     filter: blur(2px); 
-    clip-path: polygon(0 0, 50% 0, 100% 100%, 100 100%); 
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
 }
 
 #icono { 
     position: absolute;
     right: 0;
-    top: 73%; 
+    top: -50%; 
     height: 800px;
     width: 800px;
  
