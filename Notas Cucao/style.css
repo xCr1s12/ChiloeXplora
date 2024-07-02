@@ -256,10 +256,69 @@ hr {
     font-weight: bold;
     color: #fff;
     font-size:xx-large;
+    cursor: pointer;
     
 }
 
 
+
+/*Contenedor que tiene la info del mapa y sus rutas.*/
+.mapa{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#funcion_mapa{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#contenedor_vertical ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+/* container vertical para botones */
+
+#contenedor_vertical{
+    width: 0px;
+    width: 600px;
+    display: flex;
+    align-self: flex-start;
+}
+
+/*Clase para los botones*/
+.btn{
+    border-radius: 5px;
+    background-color: #F9BC60;
+    color: #121629;
+    font-family: "Spinnaker";
+    height: 180px;
+    width: 500px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Mapa "leaflet" */
+#map{
+    height: 500px;
+    width: 500px;
+    margin-right: 0;
+    right: -1200px;
+    display: flex;
+    align-self: flex-end;
+    margin-left: 750px;
+}
 
 
 
@@ -309,8 +368,6 @@ hr {
 
 .hrr{
     position: absolute;
-
-
 }
 /* ######################################### DIVISION #########################################   */
 
@@ -336,4 +393,14 @@ hr {
 }
 #info {
     margin-left: 60px;
+}
+
+.titulo_simple{
+    color: #F9BC60;
+    font-family: "Spinnaker";
+}
+
+.texto_simple{
+    color: #fff;
+    font-family: "Spinnaker";
 }

@@ -14,6 +14,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
 <script src="Proyecto.js"></script>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/> <!-- Acá tenemos el link del mapa "leaflet" -->
 </head>
 <!--BODY DE LA PAGINA (Aqui sera nuestra area de trabajo)!-->
 <body>
@@ -79,29 +82,33 @@
         <hr>
     </div>
 
+    <div class=""></div>
+
     <div id="contenedor_lugares_recomendados">
         <input type="button" value="Lugares Recomendados" id="boton_lr"> 
     </div>
 
-    <!-- segundo Contenedor general para el lugar "proximante" -->
     
-    <div class="contenedor1">   
-        <div class="boton_y_texto1"> <!-- para el texto -->
-            <h1> <!-- boton de link para "ir a notas cucao" --> 
-                Proximamente...
-            </h1>
+    <div class="mapa">
+        <div id="titulo"> <h1> Rutas </h1></div>
+        <div id="funcion_mapa">
             
-            <!-- texto que va dentro de "cucao" -->
-         <p>
-         Descripcion del lugar... </p>
-        </div>
-        
-        <div class="mini_contenedor">  
+            <!-- Contenedor para los botones verticales -->
+            
+            <div id="contenedor_vertical"> <!-- creando los botones de las rutas que irán verticales-->
+                <ul>
+                    <li><button class="btn">castro cucao</button></li>
+                    <li><button class="btn">ancud cucao</button></li>
+                    <li><button class="btn">Canal chacao cucao</button></li>
 
-        </div>
 
+                </ul>
+                
+            </div>
+            <!--contenedor de mapa de leaflet-->
+            <div id="map"></div>
+        </div>
     </div>
-    
 
     <!-- PIE DE PÁGINA -->
 
@@ -123,4 +130,9 @@
         
         </footer>
     </div>
+    <!--Script del "leaflet" -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
 </body> 
