@@ -85,7 +85,7 @@ hr {
 
 form .b_g {
 
-    margin-top: 20px;
+    margin-top: -10px;
     height: 40px;
     width: 350px;
     border-radius: 10px;
@@ -100,7 +100,7 @@ form .b_g {
 
 form .correo {
 
-    margin-top: 90px;
+    margin-top: 30px;
     color: #fff;
     margin-left: 0px;
 
@@ -176,16 +176,18 @@ form .boton-1{
     position: fixed;
     right: 0%;
     top: 0%; 
-    height: 700px;
+    bottom: 0;
+    height: 735px;
     width: 1100px;
     filter: blur(2px); 
-    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    overflow: hidden;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0,);
 }
 
 #icono { 
     position: absolute;
-    right: 0;
-    top: -50%; 
+    right: 10%;
+    top: -2%; 
     height: 800px;
     width: 800px;
  
