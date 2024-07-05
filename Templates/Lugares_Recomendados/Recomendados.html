@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>ChiloeXplora</title>
+    <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/Style_recomendado.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!---------------Encabezado------------------------------------------------>
+    <div id="Encabezado">
+        <img id="Logo01"src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview%20(1).png?raw=true" alt="Logo">
+        <header id="menu-de-cabeza-1">   
+            <ul>
+                <li>
+                    <a href="/" class="boton-menu-superior" id="Inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Herramientas">
+                        Herramientas
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Ayuda">
+                        Ayuda
+                    </a>
+                </ul>
+    
+            </ul>
+            
+        </header>
+        <a href="#" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+    </div>
+    <hr>
+    <!------Primera parte Lugares recomendados------------------------------------------------------------>
+    <section id="Primera_Seccion">
+        <div id="Titulos">
+            <h1 class="titulo_simple">Lugares Recomendados</h1>
+            <h4 class="texto_simple">Revisa  apartados  turísticos  de:</h2>
+            <h2 class="texto_simple">Cucao</h2>
+        </div>
+        
+        <div id="items_Lugares" class="Columns_lugares">
+            <div class="container_L" id="n1">
+                <img src="{% static 'Images/LagoHuillinco.png'%}" alt="" class="rectangle-18" id="Lugar1">                
+                <a href="#"><h3 class="titulo_simple">Lago Huillinco</h3></a>
+            </div>
+            <div class="container_L" id="n2">
+                <img src="{% static 'Images/MuelleAlmas.png'%}" alt="" class="rectangle-18" id="Lugar1">
+                <a href="#"><h3 class="titulo_simple">Muelle de las almas</h3></a>
+            </div>
+            <div class="container_L" id="n3">
+                <img src="{%static 'Images\PlayaCucao.png'%}" alt="" class="rectangle-18" id="Lugar1">
+                <a href="#"><h3 class="titulo_simple">Playa Cucao</h3></a>
+            </div>
+        </div>
+        <hr id="Line">
+
+    </section>
+    <!------Segunda Parte Alojamientos------------------------------------------------------------>
+    <section id="Alojamientos_H1S2P3">
+        <div id="Titulos_A">
+            <h1 class="titulo_simple">Alojamientos</h1>
+            <span class="texto_simple" id="Text_A">Aquí tenemos diversos alojamientos para tu estadía en o cerca de Cucao.</span>
+        </div>
+        <div id="Alojamientos_I">
+            <div id="Col">
+                <div class="A_item" id="A_1">
+                    <div class="imagen_A"><img src="{% static 'Images/parador-darwin.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >PARADERO DE DARWIN</h5>
+                </div>
+                <div class="A_item" id="A_2">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabaña_Luna_del_sur.jpg'%}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑAS LUNA DEL SUR</h5>
+                </div>
+                <div class="A_item" id="A_3">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabañas_Linda_Vista.jpg'%}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑAS LINDA VISTA</h5>
+                </div>
+            </div>
+            <div id="Col">
+                <div class="A_item" id="A_4">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabaña_Cucao_Ngen_Lafken.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑA NGEN LAFKEN</h5>
+                </div>
+                <div class="A_item" id="A_5">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabaña_Señora_Haydeee.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑAS SEÑORA HAYDEE</h5>
+                </div>
+                <div class="A_item" id="A_6">
+                    <div class="imagen_A"><img src="{% static 'Images/CHILE LODGE-LAGO HUILLINCO.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CHILE LODGE-LAGO HUILLINCO</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr id="Line">
+    <!------Tercera parte Actividades------------------------------------------------------------>
+    <section id="Actividades">
+        <div id="Titulos_Ac">
+            <h1 class="titulo_simple">Actividades</h1>
+            <span class="texto_simple" id="Text_A">Aquí tenemos diversos alojamientos para tu estadía en o cerca de Cucao.</span>
+        </div>
+        <div id="Alojamientos_I">
+            <div id="Col_A">
+                <div class="Ac_item" id="A_1">
+                    <div class="imagen_A"><img src="{% static 'Images/cabalgata-dunas-de-cucao.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABALGATAS DUNAS DE CUCAOS</h5>
+                </div>
+                <div class="Ac_item" id="A_2">
+                    <div class="imagen_A"><img src="{% static 'Images/Kayak.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >KAYAK LAGO CUCAO</h5>
+                </div>
+                <div class="Ac_item" id="A_3">
+                    <div class="imagen_A"><img src="{% static 'Images/Fiesta_DE_LA_LUNA.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >FIESTA DE LA LUNA (Cucao)</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr id="Line">
+    <!------CUarta Parte Restaurants------------------------------------------------------------>
+    <section id="Restaurants">
+        <div id="Titulos_A">
+            <h1 class="titulo_simple">Alojamientos</h1>
+            <span class="texto_simple" id="Text_A">Aquí tenemos diversos alojamientos para tu estadía en o cerca de Cucao.</span>
+        </div>
+        <div id="Alojamientos_I">
+            <div id="Col">
+                <div class="A_item" id="A_1">
+                    <div class="imagen_A"><img src="{% static 'Images/parador-darwin.jpg' %}" alt="" class="imagenes_A"></div>
+                    <h5 class="texto_simple" >PARADERO DE DARWIN</h5>
+                </div>
+                <div class="A_item" id="A_2">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabaña_Luna_del_sur.jpg'%}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑAS LUNA DEL SUR</h5>
+                </div>
+                <div class="A_item" id="A_3">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabañas_Linda_Vista.jpg'%}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑAS LINDA VISTA</h5>
+                </div>
+            </div>
+            <div id="Col">
+                <div class="A_item" id="A_4">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabaña_Cucao_Ngen_Lafken.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑA NGEN LAFKEN</h5>
+                </div>
+                <div class="A_item" id="A_5">
+                    <div class="imagen_A"><img src="{% static 'Images/Cabaña_Señora_Haydeee.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CABAÑAS SEÑORA HAYDEE</h5>
+                </div>
+                <div class="A_item" id="A_6">
+                    <div class="imagen_A"><img src="{% static 'Images/CHILE LODGE-LAGO HUILLINCO.jpg' %}" alt="" class="imagenes_A"></div>
+                    
+                    <h5 class="texto_simple" >CHILE LODGE-LAGO HUILLINCO</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------Ultima-Parte------------------------------------------->
+    <hr id="Line">
+    <footer id="pie_pagina" >
+        <img src="{% static 'Images/imagen_2024-05-30_130035889-removebg-preview (1).png' %}" alt="" style="margin-top: 20px;">
+        <div id="contactanos">
+            <h2 class="titulo_simple ">Contáctanos</h3>
+            <h4 class="texto_simple">chiloexplora@gmail.com</h4>
+            <h4 class="texto_simple">@By_cicleta</h4>
+            <h4 class="texto_simple">Cristobal Oñate</h4>
+        </div>
+        <div id="info">
+            <h2 class="titulo_simple">Info</h2>
+            <span class="texto_simple" id="txt-p" >Esta página web fue desarrollada por el equipo conformado por Benjamín Concha, Bryan Cárcamo, Cristóbal Oñate e Ignacio Millapani, estudiantes de la Universidad de Los Lagos.</span>
+        </div>
+    </footer>
+</body>
+</html>
+

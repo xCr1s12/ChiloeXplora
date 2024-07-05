@@ -8,11 +8,10 @@
     <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Inicio_style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
-<script src="Proyecto.js"></script>
 </head>
 <!--BODY DE LA PAGINA (Aqui sera nuestra area de trabajo)!-->
 <body>
@@ -45,7 +44,6 @@
 <!----------------Primera-Parte------------------------------------------->
 <div id="PRIMERA-PARTE-PAG-01">
     <div id="textos-img">
-        <div id="fondo_degradado"></div>       
         <div id="Textos">
             <h1 id="Titulo"> ChiloeXplora </h1>
             <h3 id="Acerca_de">Acerca de</h3>
@@ -55,7 +53,7 @@
                 <a href="#" id="Buscar" class="Boton">Buscar</a> 
         </div>
     </div>
-    <img id="img-circ" src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/Foto_muelle_de_las_almas.png?raw=true">
+    <img id="img-circ" src="{% static 'Images/Castro.png'%}">
 
 </div>
 <!----------------Segunda-Parte------------------------------------------->
@@ -96,7 +94,7 @@
 <div id="TERCERA-PARTE-PAG-01">
     <div id="text_and_title">
         <h1 class="titulo_simple"> Descubre Chiloé y sus atracciones turísticas </h1>
-        <a href="#" class="Boton" id="Lugares_Recomendados">Lugares Recomendados</a>
+        <a href="Lugares_Recomendados/" class="Boton" id="Lugares_Recomendados">Lugares Recomendados</a>
     </div>
     <div id="items_Lugares" class="Columns_lugares">
         <div class="rectangle-18" id="Lugar1">

@@ -96,18 +96,7 @@ hr {
     display: flex;
 }
 
-#fondo_degradado{
-    position: absolute;
-    padding: 4px 3px;
-	background: linear-gradient(180deg, rgb(11, 15, 34) 0%, rgb(52, 66, 126) 100%);
-	color: #FFFFFF;
-	border-width: 1px;
-    border: #121629;
-    width: 30%;
-    height: 79.8%;
-    z-index: -1000;
-    box-shadow: 10px 10px rgb(52, 66, 126) 100%;
-}
+
 #textos-img{
     z-index: 100;
 	line-height: 1.3;
@@ -117,6 +106,7 @@ hr {
     display: flexbox;
 }
 #Textos {
+    background: (180deg, rgb(11, 15, 34) 0%, rgb(52, 66, 126) 100%);
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -337,15 +327,7 @@ hr {
 	background: #292828;
 	border-radius: 10px 10px 10px 10px;
 }
-#Lugar1 {
-    margin-right: 5%;
-}
-#Lugar2 {
-    align-self: center;
-}
-#Lugar3 {
-    margin-left: 5%;
-}
+
 .img_Proximamente {
     margin-top: 20px;
     background-color: #44444480;
@@ -371,7 +353,6 @@ hr {
     line-height: 1.3;
     text-align: center;
 }
-
 
 /*----------------------Pie(Pie_De_Pagina-Ultima-parte)-------------*/
 
