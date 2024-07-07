@@ -31,10 +31,9 @@ document.querySelectorAll('.btn').forEach((button, index) => {
         if (marker) {
             map.removeLayer(marker);
         }
-        if (polygon) {
-            map.removeLayer(cucaoPolygon)
+        if (cucaoPolygon) {
+            map.removeLayer(cucaoPolygon);
         }
-        
 
         // Define el punto de destino para centrar el mapa y ajustar el zoom
         var end;
@@ -58,15 +57,32 @@ document.querySelectorAll('.btn').forEach((button, index) => {
             setTimeout(() => {
                 map.setView(end, 9);
             }, 500); // Agrega un pequeño retraso para asegurar que la vista se ajuste correctamente
-        }
-        // mensaje de advertencia
-        var mensajeAdvertencia = document.getElementById('mensaje_advertencia');
-        mensajeAdvertencia.style.display = 'block' ; 
 
-        setTimeout(() => {
-            mensajeAdvertencia.style.display = 'none';
-        }, 5000);
+            // Mostrar mensaje de advertencia
+            var mensajeAdvertencia = document.getElementById('mensaje_advertencia');
+            mensajeAdvertencia.style.display = 'block';
+            setTimeout(() => {
+                mensajeAdvertencia.style.display = 'none';
+            }, 5000);
+        }
     });
+});
+
+// Evento para copiar la ruta como enlace a Google Maps
+const copiarRuta = document.getElementById('copiarRuta');
+copiarRuta.addEventListener('click', () => {
+    // Obtener las coordenadas de inicio y fin de la última ruta seleccionada
+    var start = routingControl.getWaypoints()[0].latLng;
+    var end = routingControl.getWaypoints()[1].latLng;
+
+    // Crear el enlace a Google Maps con las coordenadas
+    var googleMapsLink = `https://www.google.com/maps/dir/?api=1&origin=${start.lat},${start.lng}&destination=${end.lat},${end.lng}`;
+
+    // Abrir la página de Google Maps en una nueva pestaña
+    window.open(googleMapsLink, '_blank');
+
+    // Mostrar mensaje de confirmación
+    alert('Se ha copiado la ruta a Google Maps.');
 });
 
 // Ejemplo de cómo agregar un marcador
@@ -92,25 +108,3 @@ var cucaoPolygon = L.polygon(polygon, {
     fillOpacity: 0.5
 }).addTo(map).bindPopup("Pueblo de Cucao");
 
-// Obtener el botón y el campo de texto
-const botonCopiar = document.getElementById('copiarRuta');
-const campoTexto = document.getElementById('rutaParaCopiar');
-
-// Evento click para el botón de copiar
-botonCopiar.addEventListener('click', () => {
-    // Obtener la URL actual del navegador (o la ruta que desees compartir)
-    const ruta = window.location.href; // Puedes reemplazar con la ruta específica que deseas compartir
-
-    // Mostrar la ruta en el campo de texto
-    campoTexto.value = ruta;
-
-    // Seleccionar el texto en el campo de texto
-    campoTexto.select();
-    campoTexto.setSelectionRange(0, 99999); // Para dispositivos móviles
-
-    // Copiar el texto seleccionado al portapapeles
-    document.execCommand('copy');
-
-    // Informar al usuario que se copió la ruta
-    alert('¡La ruta se ha copiado al portapapeles!');
-});
