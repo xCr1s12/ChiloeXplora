@@ -169,8 +169,23 @@ form #checkbox{
 }
 
 form .boton-1{
+background-color: #F9BC60;
+color: #121629;
+font-family: "Spinnaker";
+height: 60px;
+width: 280px;
+font-size: 20px;
+cursor: pointer;
+font-weight: bold;
 
     
+ }
+
+ form .registrarse{
+    
+
+
+
  }
  #fondo { 
     position: absolute;
@@ -191,4 +206,3 @@ form .boton-1{
     width: 800px;
  
 }
-#
