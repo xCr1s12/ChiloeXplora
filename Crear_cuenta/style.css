@@ -173,15 +173,14 @@ form .boton-1{
     
  }
  #fondo { 
-    position: fixed;
+    position: absolute;
     right: 0%;
-    top: 0%; 
+    top: 5%; 
     bottom: 0;
-    height: 735px;
+    height: 700px;
     width: 1100px;
     filter: blur(2px); 
     overflow: hidden;
-    clip-path: polygon(100% 100%, 0 100%, 100% 0,);
 }
 
 #icono { 
@@ -192,3 +191,4 @@ form .boton-1{
     width: 800px;
  
 }
+#
