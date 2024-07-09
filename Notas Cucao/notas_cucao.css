@@ -325,7 +325,6 @@ hr {
     display: flex;
     align-self: flex-end;
     margin-left: 500px;
-    margin-bottom: 185px;
     top: 0;
     right: 0;
 }
@@ -341,6 +340,27 @@ hr {
     z-index: 1000;
     display: none;
 
+}
+#copiarRuta{
+    border-radius: 10px;
+    background-color: #F9BC60;
+    color: #121629;
+    font-family: "Spinnaker";
+    height: 60px;
+    width: 280px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 820px;
+    margin-top: 5px;
+}
+
+#mapa_copiar{
+    display: flex;
+    flex-direction: column;
+    height: 685px;
+    width: 1100;
+    align-items: center;
 }
 
 #hr_negro{

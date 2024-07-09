@@ -1,16 +1,16 @@
-var map = L.map('map').setView([-42.6378, -74.1091], 14);
+var map = L.map('map').setView([-42.63837, -74.10997], 14);
 
 // Agregar capa base
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+}).addTo(map);  
 
-// Variable global para el marcador y el control de la ruta
+// Variable global para el marcador y el control de la ruta y tambien el poligono para luego quitarlos mediante una funcion más abajito
 var marker;
 var routingControl;
 var polygon;
 
-// Función para agregar una ruta
+// Función para agregar una ruta y luego se vaya cambiando
 function addRoute(start, end) {
     if (routingControl) {
         map.removeControl(routingControl);
@@ -39,16 +39,16 @@ document.querySelectorAll('.btn').forEach((button, index) => {
         var end;
         switch (index) {
             case 0:
-                addRoute([-42.4806, -73.7635], [-42.6378, -74.1091]); // Ruta Castro - Cucao
-                end = [-42.6378, -74.1091];
+                addRoute([-42.48127, -73.77064], [-42.63837, -74.10997]); // Ruta Castro - Cucao (Terminado)
+                end = [-42.63837, -74.10997];
                 break;
             case 1:
-                addRoute([-41.8698, -73.8203], [-42.6378, -74.1091]); // Ruta Ancud - Cucao
-                end = [-42.6378, -74.1091];
+                addRoute([-41.87947, -73.79586], [-42.63837, -74.10997]); // Ruta Ancud - Cucao (Terminado)
+                end = [-42.63837, -74.10997];
                 break;
             case 2:
-                addRoute([-41.83148, -73.51242], [-42.6378, -74.1091]); // Ruta Canal de Chacao - Cucao
-                end = [-42.6378, -74.1091];
+                addRoute([-41.83148, -73.51242], [-42.63837, -74.10997]); // Ruta Canal de Chacao - Cucao (Terminado)
+                end = [-42.63837, -74.10997];
                 break;
         }
 
@@ -56,7 +56,7 @@ document.querySelectorAll('.btn').forEach((button, index) => {
         if (end) {
             setTimeout(() => {
                 map.setView(end, 9);
-            }, 500); // Agrega un pequeño retraso para asegurar que la vista se ajuste correctamente
+            }, 500); // Retraso para que carge todo bien
 
             // Mostrar mensaje de advertencia
             var mensajeAdvertencia = document.getElementById('mensaje_advertencia');
@@ -68,7 +68,7 @@ document.querySelectorAll('.btn').forEach((button, index) => {
     });
 });
 
-// Evento para copiar la ruta como enlace a Google Maps
+// Evento para copiar la ruta como enlace i luego poder irse a google maps
 const botonCopiar = document.getElementById('copiarRuta');
 botonCopiar.addEventListener('click', () => {
     // Obtener las coordenadas de inicio y fin de la última ruta seleccionada
@@ -86,7 +86,7 @@ botonCopiar.addEventListener('click', () => {
 });
 
 // Ejemplo de cómo agregar un marcador
-marker = L.marker([-42.6378, -74.1091]).addTo(map)
+marker = L.marker([-42.63837, -74.10997]).addTo(map)
     .bindPopup("Centro de Cucao").openPopup();
 
 // Definir las coordenadas del polígono que encierra Cucao
