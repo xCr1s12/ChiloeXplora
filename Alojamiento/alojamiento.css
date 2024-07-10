@@ -232,6 +232,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-left: 50px;
+    gap: 2rem;
 }
 
 
@@ -282,10 +283,7 @@ hr {
     height: 1000px;
     width: 1000px;
     display: flex;
-    align-self: flex-end;
-    top: 0;
-    flex: 1;
-    left: 0px; 
+    align-self: center
 }
 /* funcionando */
 #mensaje_advertencia{
