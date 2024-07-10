@@ -242,7 +242,7 @@ hr {
     flex-direction: column;
     height: 685px;
     margin-right: 23rem;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.5rem;
 }
 
 /* Titulo de "comentarios" */
@@ -255,7 +255,7 @@ hr {
     font-size: 40px;
 }
 
-/* Nisiquiera sé si está funcionando*/
+/* Nisiquiera sé si está funcionando xd*/
 #funcion_mapa{
     display: flex;
     flex-direction: row;
@@ -287,7 +287,7 @@ hr {
     flex: 1;
     left: 0px; 
 }
-
+/* funcionando */
 #mensaje_advertencia{
     position: absolute;
     top: 420px;
@@ -299,6 +299,7 @@ hr {
     display: none;
 
 }
+/* boton centrado (funcionando) */
 #copiarRuta{
     border-radius: 10px;
     background-color: #F9BC60;
@@ -306,35 +307,49 @@ hr {
     font-family: "Spinnaker";
     height: 60px;
     width: 280px;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     font-weight: bold;
-    margin-left: 820px;
-    margin-top: 5px;
+    margin-top: 1rem;
 }
-
+/* contenedor que contiene el mapa y el boton*/
 #mapa_copiar{
     display: flex;
     flex-direction: column;
     height: 685px;
-    width: 1000px;
+    width: 1100px;
     align-items: center;
 }
 
-#hr_negro{
-    background-color: black;
-    height: 2px;
-    width: 100%;
+#horizontal_botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15rem;
+    margin-top: 0.5rem;
+    
 }
 
+#obtener_ruta{
+    border-radius: 10px;
+    background-color: #F9BC60;
+    color: #121629;
+    font-family: "Spinnaker";
+    height: 60px;
+    width: 280px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
 /* ################### Pie de página ################# */
 
 
 /* CONTENIDO DEL PIE DE PÁGINA   */
 
 .pie_de_pagina{
-    position: relative;
-    margin-top: 500px;
+    position: re1ative;
+    margin-top: 15rem;
 }
 
 #pie_pagina{
