@@ -1,0 +1,120 @@
+{%load static%}
+<!DOCTYPE html> 
+<html lang="es-ES">
+
+<!-- HEAD DE LA PAGINA (CONTIENE TODA LA INFORMACION NO VISIBLE) -->
+<head>
+
+    <title>ChiloeXplora</title>
+    <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/Buscar_Style.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+<script src="Proyecto.js"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!--BODY DE LA PAGINA (Aqui sera nuestra area de trabajo)!-->
+<body>
+    <!-- encabezado -->
+
+    <div id="Encabezado">
+        <img id="Logo01"src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview%20(1).png?raw=true" alt="Logo">
+        <header id="menu-de-cabeza-1">   
+            <ul>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Herramientas">
+                        Herramientas
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Ayuda">
+                        Ayuda
+                    </a>
+                </li>
+    
+            </ul>
+            
+        </header>
+        <a href="#" class="Boton" id="Iniciar_Sesion">Iniciar Sesión</a>
+    </div>
+    <hr>    
+    
+
+    
+   
+    <!-- primer Contenedor general para el lugar "cucao" -->
+<div id="General">
+    <!-- Buscador -->
+    
+    <div class="buscador">
+        <input id="text" type="text"  placeholder="Buscar lugares...">
+            <button id="boton_busc">
+                <i class='bx bx-search bx-lg'></i>
+            </button>  
+    </div>
+        
+    <div class="contenedor">   
+        <div class="boton_y_texto"> <!-- para el texto -->
+            <a class="texto_cucao" href="Notas_Cucao/"> Cucao</a><!-- boton de link para "ir a notas cucao" -->
+            
+            <!-- texto que va dentro de "cucao" -->
+         <p>
+         Cucao, una pintoresca aldea ubicada en la isla de Chiloé, en el sur de Chile.<br>
+         Es un destino turístico que cautiva con su belleza natural y su rica cultura local
+         con una ubicación privilegiada en el borde del Parque Nacional Chiloé
+         y a orillas del majestuoso Lago Cucao.<br>
+         Este rincón encantador ofrece una variedad de atracciones para los visitantes.</p>
+        </div>
+        
+        <img src="https://palafitocucaolodge.com/wp-content/uploads/2022/07/muelle.de_.las_.almas-palafito.cucao_.chiloe.jpg" alt="foto muelle" class="imagen_muelle">
+
+    </div>
+
+    <!-- segundo Contenedor general para el lugar "proximante" -->
+
+    <div class="contenedor1">   
+        <div class="boton_y_texto1"> <!-- para el texto -->
+            <h1> <!-- boton de link para "ir a notas cucao" --> 
+                Proximamente...
+            </h1>
+            
+            <!-- texto que va dentro de "cucao" -->
+         <p>
+         Descripcion del lugar... </p>
+        </div>
+        
+        <div class="mini_contenedor">  
+
+        </div>
+
+    </div>
+    
+
+</div>
+    <!-- PIE DE PÁGINA -->
+
+    <hr class="hrr" >
+        <footer id="pie_pagina" >
+            <img src="/ChiloeXplora/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview (1).png" alt="" style="margin-top: 20px;">
+            <div id="contactanos">
+                <h2 class="titulo_simple ">Contáctanos</h3>
+                <h4 class="texto_simple">chiloexplora@gmail.com</h4>
+                <h4 class="texto_simple">@By_cicleta</h4>
+                <h4 class="texto_simple">Cristobal Oñate</h4>
+            </div>
+            <div id="info">
+                <h2 class="titulo_simple">Info</h2>
+                <span class="texto_simple" id="txt-p" >Esta página web fue desarrollada por el equipo conformado por Benjamín Concha, Bryan Cárcamo, Cristóbal Oñate e Ignacio Millapani, estudiantes de la Universidad de Los Lagos.</span>
+            </div>
+        
+        
+        </footer>
+</body> 
