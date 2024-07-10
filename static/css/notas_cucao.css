@@ -1,0 +1,377 @@
+/* Comentario */
+html, body {
+    background-color: #121629;
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Spinnaker", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.Boton {
+    background-color: #F9BC60;
+    color: #fff;
+    font-family: "Spinnaker";
+}
+
+/* Encabezado */
+#Encabezado {
+    align-content: center;
+    padding: 0.625rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#Logo01 {
+    margin-left: 3%;
+    border: 0.0625rem;
+    display: inline;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    font-size: 0.9375rem;
+    font-family: "Spinnaker";
+    display: inline;
+}
+
+/* menu superior */
+.boton-menu-superior {
+    margin-left: 70%;
+    align-items: flex-start;
+    position: relative;
+    padding: 0.75rem 0.75rem;
+    color: #fff;
+    letter-spacing: 0.125rem;
+    font-size: medium;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.boton-menu-superior:hover {
+    background: #F9BC60;
+    box-shadow: 0 0 0.625rem #F9BC60, 0 0 2.5rem #F9BC60, 0 0 4.375rem #F9BC60;
+    transition-delay: 0.0125ms;
+}
+#Iniciar_Sesion {
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    width: 7.9375rem;
+    height: 2rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.125rem;
+}
+#Iniciar_Sesion:hover {
+    background: #F9BC60;
+    box-shadow: 0 0 0.625rem #F9BC60, 0 0 2.5rem #F9BC60, 0 0 4.375rem #F9BC60;
+    transition-delay: 0.0125ms;
+    cursor: pointer;
+}
+
+/* Linea divisora */
+hr {
+    width: 100%;
+    height: 0.046875rem;
+    background: #fff;
+    border: none;
+    margin-top: 0.1875rem;
+}
+
+/* Iniciar sesión */
+.Boton {
+    background-color: #F9BC60;
+    color: #fff;
+    font-family: "Spinnaker";
+}
+#Encabezado {
+    align-content: center;
+    padding: 0.625rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#Logo01 {
+    margin-left: 3%;
+    border: 0.0625rem;
+    display: inline;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    font-size: 0.9375rem;
+    font-family: "Spinnaker";
+    display: inline;
+}
+.boton-menu-superior {
+    margin-left: 70%;
+    align-items: flex-start;
+    position: relative;
+    padding: 0.75rem 0.75rem;
+    color: #fff;
+    letter-spacing: 0.125rem;
+    font-size: medium;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.boton-menu-superior:hover {
+    background: #F9BC60;
+    box-shadow: 0 0 0.625rem #F9BC60, 0 0 2.5rem #F9BC60, 0 0 4.375rem #F9BC60;
+    transition-delay: 0.0125ms;
+}
+#Iniciar_Sesion {
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    width: 7.9375rem;
+    height: 2rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.125rem;
+}
+#Iniciar_Sesion:hover {
+    background: #F9BC60;
+    box-shadow: 0 0 0.625rem #F9BC60, 0 0 2.5rem #F9BC60, 0 0 4.375rem #F9BC60;
+    transition-delay: 0.0125ms;
+    cursor: pointer;
+}
+
+/* Linea divisora */
+hr {
+    width: 100%;
+    height: 0.046875rem;
+    background: #fff;
+    border: none;
+    margin-top: 0.1875rem;
+}
+
+/* ######################################### DIVISION ######################################### */
+
+/* CONTENEDORES PARA LOS LUGARES: */
+
+/* Contenedor de "Cucao" (listo) */
+.contenedor {
+    margin-bottom: 3%;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    height: 31.25rem;
+    width: 106.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+.titulito { /* esto solo fue para hacer un margen con el texto (contiene los "hr"). (--listo--) */
+    margin-bottom: 2.5rem;
+}
+
+/* contenedor del texto completo (listo) */
+.boton_y_texto {
+    margin-left: 9.375rem;
+    margin-top: 0;
+}
+
+/* Texto de TITULO: "Cucao" (listo) */
+.boton_y_texto h1 {
+    font-weight: bold;
+    font-size: 5.625rem;
+    color: #F9BC60;
+    margin-left: 0;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.3125rem;
+}
+
+.hr_chico { /* es el hr que acompaña el titulo (listo) */
+    background: black;
+    width: 100%;
+    margin-left: 0;
+    height: 0.15625rem;
+    margin-top: 0.0625rem;
+    margin-bottom: 0;
+}
+
+/* Texto del titulo "cucao" (Litsto) */
+.boton_y_texto p {
+    font-size: 1.75rem;
+    color: #fff;
+    font-family: "Spinnaker";
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Imagen que acompaña el texto de "cucao" (lista) */
+.imagen_iglesia {
+    height: 100%;
+}
+
+/* linea que acompaña el boton de "Lugares recomendados" (Listo) */
+#hr2 {
+    width: 64.375rem;
+    margin-top: 12.5rem;
+}
+
+/* ############## CONTENEDOR DEL BOTON LUGARES RECOMENDADOS ############################# */
+#contenedor_lugares_recomendados {
+    position: relative;
+    top: -1.875rem;
+    height: 6.25rem;
+    width: 25rem;
+    left: 75rem;
+}
+
+/* Boton para ir a Lugares Recomendados */
+#boton_lr {
+    background-color: #F9BC60;
+    border-radius: 0.625rem;
+    height: 6.25rem;
+    width: 25rem;
+    font-family: "Spinnaker";
+    font-weight: bold;
+    color: #fff;
+    font-size: xx-large;
+    cursor: pointer;
+    margin-top: -1.25rem;
+}
+
+/* ############# Contenedor que tiene la info del mapa y sus rutas. ############## */
+.mapa {
+    display: flex;
+    flex-direction: column;
+    height: 56.25rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7.5rem;
+}
+
+#titulo {
+    color: #F9BC60;
+    font-family: "Spinnaker";
+    font-weight: bold;
+    font-size: 1.5625rem;
+}
+
+#funcion_mapa {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#contenedor_vertical ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* container vertical para botones */
+#contenedor_vertical {
+    height: 37.5rem;
+    width: 37.5rem;
+}
+/* container vertical para botones */
+#contenedor_vertical {
+    height: 37.5rem;
+    width: 37.5rem;
+    display: flex;
+    align-self: flex-start;
+}
+
+/*Clase para los botones*/
+.btn {
+    border-radius: 0.3125rem;
+    background-color: #F9BC60;
+    color: #121629;
+    font-family: "Spinnaker";
+    height: 11.25rem;
+    width: 31.25rem;
+    font-size: 1.875rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Mapa "leaflet" */
+#map {
+    height: 25rem;
+    width: 37.5rem;
+    display: flex;
+    align-self: flex-end;
+    margin-left: 37.5rem;
+    margin-bottom: 11.5625rem;
+    top: 0;
+    right: 0;
+}
+
+#hr_negro {
+    background-color: black;
+    height: 0.125rem;
+    width: 100%;
+}
+
+/*##################### Comentarios ###################*/
+
+/* div de comentarios */
+#comentarios {
+    width: 100%;
+}
+
+/* texto "Comentarios" */
+#comentarios h1 {
+    font-family: "Spinnaker";
+    color: #fff;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+/* ################### Pie de página ################# */
+
+/* CONTENIDO DEL PIE DE PÁGINA */
+.pie_de_pagina {
+    position: relative;
+    margin-top: 31.25rem;
+}
+
+#pie_pagina {
+    margin-left: 1.25rem;
+    height: 9.375rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+#contactanos {
+    margin-top: 0.625rem;
+    line-height: 0.5;
+    margin-left: 1.25rem;
+}
+#info {
+    margin-left: 3.75rem;
+}
+
+.titulo_simple {
+    color: #F9BC60;
+    font-family: "Spinnaker";
+}
+
+.texto_simple {
+    color: #fff;
+    font-family: "Spinnaker";
+}

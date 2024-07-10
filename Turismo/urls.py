@@ -4,5 +4,5 @@ from .views import TurismoListViews
 app_name = 'Turismo'
 
 urlpatterns = {
-    path("", TurismoListViews.as_view(), name="TurismoListViews")  
+    path("", TurismoListViews.as_view(), name="TurismoListViews"),
 }
