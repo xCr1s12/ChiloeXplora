@@ -288,7 +288,7 @@ hr {
 /* funcionando */
 #mensaje_advertencia{
     position: absolute;
-    top: 420px;
+    top: 550px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px;

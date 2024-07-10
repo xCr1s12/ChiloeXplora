@@ -33,8 +33,13 @@ function addRoute(start, end) {
     // Ajustando el nivel del zoom del mapa pero con un leve retraso
     setTimeout(() => {
         map.setZoom(15); // reseteando zoom cuando la persona genere la ruta
-    }, 500)
+    }, 500);
 
+    var mensajeAdvertencia = document.getElementById('mensaje_advertencia');
+            mensajeAdvertencia.style.display = 'block';
+            setTimeout(() => {
+                mensajeAdvertencia.style.display = 'none';
+            }, 5000);
 
     
 }
