@@ -9,7 +9,7 @@
     <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static "css/Buscar_Style.css" %}">
+    <link rel="stylesheet" href="{% static 'css/Buscador_Style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
@@ -25,27 +25,38 @@
         <header id="menu-de-cabeza-1">   
             <ul>
                 <li>
-                    <a href="#" class="boton-menu-superior" id="Inicio">
+                    <a href="/" class="boton-menu-superior" id="Inicio">
                         Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="boton-menu-superior" id="Herramientas">
+                    <a href="/" class="boton-menu-superior" id="Herramientas">
                         Herramientas
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="boton-menu-superior" id="Ayuda">
+                    <a href="/" class="boton-menu-superior" id="Ayuda">
                         Ayuda
                     </a>
                 </li>
     
             </ul>
-            
         </header>
-        <a href="#" class="Boton" id="Iniciar_Sesion">Iniciar Sesión</a>
+        <div id="botones">
+            {% if request.user.is_authenticated %}
+            <div class="user-info">
+                {{ request.user.username }}
+                <a href="{% url 'logout' %}" class="Boton" id="cerrar_sesion" >Cerrar sesion</a>
+            </div>
+            
+            {% else %}
+            <a href="{% url 'login'%}" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+            {% endif %}
+        </div>
+
+        
     </div>
-    <hr>    
+<hr>  
     
 
     
@@ -63,7 +74,7 @@
         
     <div class="contenedor">   
         <div class="boton_y_texto"> <!-- para el texto -->
-            <a class="texto_cucao" href="Notas_Cucao/"> Cucao</a><!-- boton de link para "ir a notas cucao" -->
+        <div class="texto_cucao titulo_simple"> <a href="Notas_Cucao/" style="text-decoration: none;"><h1>Cucao</h1></a></div><!-- boton de link para "ir a notas cucao" -->
             
             <!-- texto que va dentro de "cucao" -->
          <p>
@@ -98,23 +109,23 @@
     </div>
     
 
-</div>
+
     <!-- PIE DE PÁGINA -->
 
-    <hr class="hrr" >
-        <footer id="pie_pagina" >
-            <img src="/ChiloeXplora/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview (1).png" alt="" style="margin-top: 20px;">
-            <div id="contactanos">
-                <h2 class="titulo_simple ">Contáctanos</h3>
-                <h4 class="texto_simple">chiloexplora@gmail.com</h4>
-                <h4 class="texto_simple">@By_cicleta</h4>
-                <h4 class="texto_simple">Cristobal Oñate</h4>
-            </div>
-            <div id="info">
-                <h2 class="titulo_simple">Info</h2>
-                <span class="texto_simple" id="txt-p" >Esta página web fue desarrollada por el equipo conformado por Benjamín Concha, Bryan Cárcamo, Cristóbal Oñate e Ignacio Millapani, estudiantes de la Universidad de Los Lagos.</span>
-            </div>
-        
-        
-        </footer>
+<hr class="hrr" >
+<footer id="pie_pagina" >
+    <img src="{% static 'Images/imagen_2024-05-30_130035889-removebg-preview (1).png' %}" id="patata" style="margin-top: 20px;">
+    <div id="contactanos">
+        <h2 class="titulo_simple ">Contáctanos</h3>
+        <h4 class="texto_simple">chiloexplora@gmail.com</h4>
+        <h4 class="texto_simple">@By_cicleta</h4>
+        <h4 class="texto_simple">Cristobal Oñate</h4>
+    </div>
+    <div id="info">
+        <h2 class="titulo_simple">Info</h2>
+        <span class="texto_simple" id="txt-p" >Esta página web fue desarrollada por el equipo conformado por Benjamín Concha, Bryan Cárcamo, Cristóbal Oñate e Ignacio Millapani, estudiantes de la Universidad de Los Lagos.</span>
+    </div>
+
+
+</footer>
 </body> 

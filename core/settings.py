@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'cucao',
     'Busqueda',
     'Users',
+    'comentarios',
 ]
 
 MIDDLEWARE = [

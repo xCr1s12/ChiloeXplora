@@ -12,6 +12,10 @@ html,body{
     justify-content: center;
     align-items: center;
  }
+ #menu-de-cabeza-1 {
+    display: flex;
+    flex-direction: row;
+ }
  .titulo_simple{
     font-family: "Spinnaker";
     color: #F9BC60;
@@ -25,91 +29,13 @@ html,body{
     color: #fff;
     font-family: "Spinnaker";
  }
-
- /* Encabezado */
-#Encabezado {
-    align-content: center;
-    padding: 10px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-#Logo01 {
-    margin-left: 3%;
-    border: 1px;
-    display: inline;
-    width: 50px;
-    height: 50px;
-}
-ul {
-    white-space: nowrap;
-    list-style: none;
-    padding:0;
-}
-ul li {
-    font-size: 15px;
-    font-family: "Spinnaker";
-    display: inline;
-}
-
-/* menu superior */
-.boton-menu-superior {
-    margin-left: 70%;
-    align-items: flex-start;
-    position: relative;
-    padding: 12px 12px;
-    color: #fff;
-    letter-spacing: 2px;
-    font-size: medium;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-}
-.boton-menu-superior:hover {
-    background:#F9BC60;
-    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
-    transition-delay: 0.2ms;
-}
-#Iniciar_Sesion{
-    margin-left: 60%;
-    text-align: center;
-    align-content: center;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    width: 127px;
-    height: 32px;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-#Iniciar_Sesion:hover {
-    background:#F9BC60;
-    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
-    transition-delay: 0.2ms;
-    cursor: pointer;
-}
-
-/* Linea divisora */
-hr {
-    width: 100%;
-    height: 0.75px;
-    background: #fff;
-    border: none;
-    margin-top: 3px;
-}   
-
-/* Iniciar sesión */
-.Boton {
-    background-color: #F9BC60;
-    color: #fff;
-    font-family: "Spinnaker";
- }
  #Encabezado {
     align-content: center;
     padding: 10px 0;
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 #Logo01 {
     margin-left: 3%;
@@ -128,10 +54,17 @@ ul li {
     font-family: "Spinnaker";
     display: inline;
 }
+.user-info {
+    width: auto;
+    height: auto;
+    color: #F9BC60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .boton-menu-superior {
     margin-left: 70%;
     align-items: flex-start;
-    position: relative;
     padding: 12px 12px;
     color: #fff;
     letter-spacing: 2px;
@@ -146,7 +79,6 @@ ul li {
     transition-delay: 0.2ms;
 }
 #Iniciar_Sesion{
-    margin-left: 60%;
     text-align: center;
     align-content: center;
     text-decoration: none;
@@ -154,7 +86,7 @@ ul li {
     border-radius: 5px;
     width: 127px;
     height: 32px;
-    font-size: 15px;
+    font-size: medium;
     letter-spacing: 2px;
 }
 #Iniciar_Sesion:hover {
@@ -163,12 +95,35 @@ ul li {
     transition-delay: 0.2ms;
     cursor: pointer;
 }
+#cerrar_sesion{
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+#cerrar_sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
 
-/*  Linea divisora        */
+
+#botones {
+    margin-left: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
 hr {
     width: 100%;
     height: 0.75px;
-    background: #fff;
+    background: #A7A9BE;
     border: none;
     margin-top: 3px;
 }
@@ -264,7 +219,7 @@ hr {
     
 }
 /*  Titulo de "Proximamente"  */
-.boton_y_texto1 h1{
+.boton_y_texto1 a , h1{
     font-weight:bold;
     font-size: 40px;
     color: #F9BC60;
@@ -299,8 +254,8 @@ hr {
 
 #pie_pagina{
     margin-left: 20px;
-    height: 150px;
-    width: 70%;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: row;
 }
@@ -311,4 +266,8 @@ hr {
 }
 #info {
     margin-left: 60px;
+}
+#patata {
+    height: 150px;
+    width: 150px;
 }

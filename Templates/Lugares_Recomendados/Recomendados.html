@@ -19,7 +19,7 @@
         <header id="menu-de-cabeza-1">   
             <ul>
                 <li>
-                    <a href="/" class="boton-menu-superior" id="Inicio">
+                    <a href="#" class="boton-menu-superior" id="Inicio">
                         Inicio
                     </a>
                 </li>
@@ -32,12 +32,23 @@
                     <a href="#" class="boton-menu-superior" id="Ayuda">
                         Ayuda
                     </a>
-                </ul>
+                </li>
     
             </ul>
-            
         </header>
-        <a href="#" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+        <div id="botones">
+            {% if request.user.is_authenticated %}
+            <div class="user-info">
+                {{ request.user.username }}
+                <a href="{% url 'logout' %}" class="Boton" id="cerrar_sesion" >Cerrar sesion</a>
+            </div>
+            
+            {% else %}
+            <a href="{% url 'login'%}" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+            {% endif %}
+        </div>
+
+        
     </div>
     <hr>
     <!------Primera parte Lugares recomendados------------------------------------------------------------>

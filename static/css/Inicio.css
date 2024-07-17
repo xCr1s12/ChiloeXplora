@@ -10,6 +10,10 @@ html,body{
     min-height: 100vh; 
  }
  /*----------------------Encabezado-------------*/ 
+ #menu-de-cabeza-1 {
+    display: flex;
+    flex-direction: row;
+ }
  .titulo_simple{
     font-family: "Spinnaker";
     color: #F9BC60;
@@ -29,6 +33,7 @@ html,body{
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 #Logo01 {
     margin-left: 3%;
@@ -47,10 +52,17 @@ ul li {
     font-family: "Spinnaker";
     display: inline;
 }
+.user-info {
+    width: auto;
+    height: auto;
+    color: #F9BC60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .boton-menu-superior {
     margin-left: 70%;
     align-items: flex-start;
-    position: relative;
     padding: 12px 12px;
     color: #fff;
     letter-spacing: 2px;
@@ -65,7 +77,6 @@ ul li {
     transition-delay: 0.2ms;
 }
 #Iniciar_Sesion{
-    margin-left: 60%;
     text-align: center;
     align-content: center;
     text-decoration: none;
@@ -81,6 +92,31 @@ ul li {
     box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
     transition-delay: 0.2ms;
     cursor: pointer;
+}
+#cerrar_sesion{
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+#cerrar_sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
+
+
+#botones {
+    margin-left: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
 }
 hr {
     width: 100%;
@@ -103,7 +139,7 @@ hr {
     margin-left: 65px;
     height: auto;
     width: 88%;
-    display: flexbox;
+    display: flex;
 }
 #Textos {
     background: (180deg, rgb(11, 15, 34) 0%, rgb(52, 66, 126) 100%);
@@ -283,7 +319,11 @@ hr {
     justify-content: center;
 
 }
+
 /*----------------------ITems(Items-Segunda-parte)-------------*/ 
+#items_Lugares {
+    gap: 5%;
+}
 #Segunda_seccion{
     margin-top: 15%;
 }
@@ -291,6 +331,7 @@ hr {
     height: 700px;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 #text_and_title {
     display: flex;
@@ -312,12 +353,9 @@ hr {
 .Columns_lugares {
     margin-top: 50px;
     height: auto;
-    width: auto;
-    justify-content: space-between;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-self: center;
-    align-items: center;
 }
 .rectangle-18 {
     display: flex;
@@ -360,8 +398,8 @@ hr {
 
 #pie_pagina{
     margin-left: 20px;
-    height: 150px;
-    width: 70%;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: row;
 }
@@ -372,4 +410,8 @@ hr {
 }
 #info {
     margin-left: 60px;
+}
+#patata {
+    height: 150px;
+    width: 150px;
 }

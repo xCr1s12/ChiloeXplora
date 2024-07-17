@@ -6,7 +6,7 @@
     <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registrarse.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
@@ -15,28 +15,31 @@
 
 <body>
 
-    <header id="menu-de-cabeza-1">   
-        <ul>
-            <li>
-                <a href="#" class="boton-menu-superior">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="#" class="boton-menu-superior">
-                    Herramientas
-                </a>
-            </li>
-            <li>
-                <a href="#" class="boton-menu-superior">
-                    Ayuda
-                </a>
-            </li>
+    <div id="Encabezado">
+        <img id="Logo01"src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview%20(1).png?raw=true" alt="Logo">
+        <header id="menu-de-cabeza-1">   
+            <ul>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Herramientas">
+                        Herramientas
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Ayuda">
+                        Ayuda
+                    </a>
+                </li>
+    
+            </ul>
+            
+        </header>
 
-        </ul>
-        
-    </header>
-
+    </div>
     <hr>
     <section id="Registro">
         <div class="form_imagen">
@@ -49,10 +52,11 @@
                     <input class="boton-1" type="submit" value="Iniciar sesión">
                 </form>
             </div>
-            <div>
-                
-            </div>
+            <div class="relativa">
+                <img src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Inicio_de_sesion/Fotos/Logo.png?raw=true" alt="" width="650px" height="650px">  
+            </div>   
         </div> 
+        <img src="{% static 'Images/Diseño_sin_título-removebg-preview.png'%}" id="Fondo">
          
     </section>
 </body>

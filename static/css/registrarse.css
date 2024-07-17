@@ -23,58 +23,71 @@ body {
     color: #fff;
     font-family: "Spinnaker";
  }
-
-
-ul {
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
+ #Encabezado {
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
-
-li {
-
+#Logo01 {
+    margin-left: 3%;
+    border: 1px;
     display: inline;
-
+    width: 50px;
+    height: 50px;
 }
-header {
-    height: 100%px;
-    background-color: #121629;
-    padding: 0;
-    margin-top: 0;
-    margin: 0;
-
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding:0;
+}
+ul li {
+    font-size: 15px;
+    font-family: "Spinnaker";
+    display: inline;
 }
 .boton-menu-superior {
-
+    margin-left: 70%;
     align-items: flex-start;
-    margin-left: 297px;
     position: relative;
-    padding: 10px 15px;
-    color: white;
+    padding: 12px 12px;
+    color: #fff;
     letter-spacing: 2px;
     font-size: medium;
     text-decoration: none;
-    overflow: hidden;;
-    transition: 1s;
-
+    overflow: hidden;
+    transition: 0.2s;
 }
-
 .boton-menu-superior:hover {
-    transition: 0.1s;
-    background: #F9BC60;
-    animation-duration: 0.2s;
-    box-shadow: 0 0 10px #F9BC60;
-    transition-delay: 0.5ms;
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
 }
-
+#Iniciar_Sesion{
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+#Iniciar_Sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
 hr {
     width: 100%;
     height: 0.75px;
-    background: silver;
+    background: #A7A9BE;
     border: none;
-    margin-top: 15px;
+    margin-top: 3px;
 }
 /*********************************************************/
 section {
@@ -83,8 +96,13 @@ section {
     justify-content: space-evenly;
 }
 .form_imagen {
+    z-index: 1000;
+    position: relative;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 .container {
     display: flex;
@@ -136,4 +154,12 @@ input :hover {
     border-radius: 1%;
     height: 35px;
     width: 240px;
+}
+#Fondo {
+    z-index: -1000;
+    position: absolute;
+    height: 90;
+    width: 90%;
+    padding: 0;
+    margin-left: 10%;
 }

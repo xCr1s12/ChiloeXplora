@@ -9,11 +9,11 @@
     <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static "css/notas_cucao.css" %}">
+    <link rel="stylesheet" href="{% static 'css/cucao.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
-    <script src="{% static "Js/notas_cucao.js" %}"></script>
+    <script src="{% static 'Js/notas_cucao.js' %}"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
@@ -53,100 +53,95 @@
    
    
     <!-- primer Contenedor general para el lugar "cucao" -->
-
-    <div class="contenedor"> 
-
-        <img src="{% static "images/cucao_iglesia.png" %}%}" alt="foto muelle" class="imagen_iglesia"> 
+<div class="img_text">
+    <img src="{% static 'images/cucao_iglesia.png' %}" alt="foto muelle" class="imagen_iglesia"> 
         
-            <div class="boton_y_texto"> <!-- para el texto completo -->
-                <div class="titulito">   
-                    <hr class="hr_chico">
-                    <h1 class="texto_cucao"> 
-                        Cucao
-                    </h1>
-                    <hr class="hr_chico">
-                </div>
-                <!-- texto que va dentro de "cucao" -->
-                <p id="descripcion">
-                Cucao, una pintoresca aldea ubicada en la isla de Chiloé
-                Es un destino turístico que cautiva con su belleza natural<br>
-                con una ubicación privilegiada en el borde del Parque Nacional Chiloé <br>
-                y a orillas del majestuoso Lago Cucao. <br> <br>
-                Este destino encantador ofrece una variedad de atracciones para los visitantes.</p>
+    <div class="boton_y_texto"> <!-- para el texto completo -->
+        <div class="titulito">   
+            <hr class="hr_chico">
+            <h3 class="texto_cucao"> 
+                Cucao
+            </h3>
+            <hr class="hr_chico">
+        </div>
+        <!-- texto que va dentro de "cucao" -->
+        <p id="descripcion">
+        Cucao, una pintoresca aldea ubicada en la isla de Chiloé
+        Es un destino turístico que cautiva con su belleza natural<br>
+        con una ubicación privilegiada en el borde del Parque Nacional Chiloé <br>
+        y a orillas del majestuoso Lago Cucao. <br>
+        Este destino encantador ofrece una variedad de atracciones para los visitantes.</p> 
+    
+    </div>  
+    <a href="/Lugares_Recomendados/" type="button" id="boton_lr" >Lugares Recomendados</a>
+    
 
-            </div>
+</div>
+
+ 
+<hr>
+
+
+
+
+
+
+<div class="mapa">
+
+    <div id="titulo">
+        <h1> Rutas </h1>
+    </div>
+    <div id="funcion_mapa">
         
-    </div>
-    
-    <div id="hr2"> 
-        <hr>
-    </div>
+        <!-- Contenedor para los botones verticales -->
+        
+        <div id="contenedor_vertical"> <!-- creando los botones de las rutas que irán verticales-->
+            <ul>
+                <li><button class="btn">Ruta | Castro - Cucao </button></li>
+                <li><button class="btn">Ruta | Ancud - Cucao </button></li>
+                <li><button class="btn">Ruta | Canal de Chacao - Cucao </button></li>
+            </ul>
+        </div>
 
-
-    <div id="contenedor_lugares_recomendados">
-        <a type="button" id="boton_lr">Lugares Recomendados</a> 
-    </div>
-
-    
-    <div class="mapa">
-
-        <div id="titulo"> <h1> Rutas </h1></div>
-        <div id="funcion_mapa">
-            
-            <!-- Contenedor para los botones verticales -->
-            
-            <div id="contenedor_vertical"> <!-- creando los botones de las rutas que irán verticales-->
-                <ul>
-                    <li><button class="btn">Ruta | Castro - Cucao </button></li>
-                    <li><button class="btn">Ruta | Ancud - Cucao </button></li>
-                    <li><button class="btn">Ruta | Canal de Chacao - Cucao </button></li>
-                </ul>
-            </div>
-
-            <!--contenedor de mapa de leaflet-->
-            <div id='map'>
-
-            </div>
+        <!--contenedor de mapa de leaflet-->
+        <div id='map'>
 
         </div>
-    </div>
-
-    <hr id="hr_negro"> <!-- Que separará los comentarios de los usuarios-->
-
-    <!-- apartado de Comentarios-->
-    <div id="comentarios"> <h1>Comentarios</h1></div>
-    <div>
-
-        <!-- div para los comentarios-->
 
     </div>
+</div>
+
+<!-- apartado de Comentarios-->
+<div id="comentarios"> <h1>Comentarios</h1></div>
+<div id="Comentario">
+    <h1>Comentarios</h1>
+
+</div>
 
     <!-- PIE DE PÁGINA -->
+    <hr>
 
-    <div class="pie_de_pagina">
-        <hr class="hrr" >
-        <footer id="pie_pagina" >
-            <img src="/ChiloeXplora/Notas Cucao/assets/logo.png" alt="" style="margin-top: 20px;">
-            <div id="contactanos">
-                <h2 class="titulo_simple ">Contáctanos</h3>
-                <h4 class="texto_simple">chiloexplora@gmail.com</h4>
-                <h4 class="texto_simple">@By_cicleta</h4>
-                <h4 class="texto_simple">Cristobal Oñate</h4>
-            </div>
-            <div id="info">
-                <h2 class="titulo_simple">Info</h2>
-                <span class="texto_simple" id="txt-p" >Esta página web fue desarrollada por el equipo conformado por Benjamín Concha, Bryan Cárcamo, Cristóbal Oñate e Ignacio Millapani, estudiantes de la Universidad de Los Lagos.</span>
-            </div>
-        
-        
-        </footer>
-    </div>
+    <footer id="pie_pagina" >
+        <img src="{% static 'Images/imagen_2024-05-30_130035889-removebg-preview (1).png' %}" id="patata" style="margin-top: 20px;">
+        <div id="contactanos">
+            <h2 class="titulo_simple ">Contáctanos</h3>
+            <h4 class="texto_simple">chiloexplora@gmail.com</h4>
+            <h4 class="texto_simple">@By_cicleta</h4>
+            <h4 class="texto_simple">Cristobal Oñate</h4>
+        </div>
+        <div id="info">
+            <h2 class="titulo_simple">Info</h2>
+            <span class="texto_simple" id="txt-p" >Esta página web fue desarrollada por el equipo conformado por Benjamín Concha, Bryan Cárcamo, Cristóbal Oñate e Ignacio Millapani, estudiantes de la Universidad de Los Lagos.</span>
+        </div>
+    
+    
+    </footer>
 
 
     <!--Scripts de mi JS-->
     
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-    <script src="{% static "Js/notas_cucao.js" %}"></script> <!-- cargando mi JS -->
+    <script src="{% static 'Js/notas_cucao.js' %}"></script> <!-- cargando mi JS -->
     
 </body> 

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from .forms import UsuarioRegistroForm, UsuarioLoginForm
 from django.urls import reverse
 
@@ -31,3 +31,7 @@ def login_usuario(request):
     else:
         form = UsuarioLoginForm()
     return render(request, 'Usuarios/iniciar_sesion.html', {'form': form})
+
+def logout_usuario(request):
+    logout(request)
+    return redirect(reverse('inicio'))

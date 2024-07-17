@@ -8,7 +8,7 @@
     <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/Inicio_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Inicio.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
@@ -36,9 +36,20 @@
                 </li>
     
             </ul>
-            
         </header>
-        <a href="login/" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+        <div id="botones">
+            {% if request.user.is_authenticated %}
+            <div class="user-info">
+                {{ request.user.username }}
+                <a href="{% url 'logout' %}" class="Boton" id="cerrar_sesion" >Cerrar sesion</a>
+            </div>
+            
+            {% else %}
+            <a href="{% url 'login'%}" class="Boton" id="Iniciar_Sesion">Iniciar Sesion</a>
+            {% endif %}
+        </div>
+
+        
     </div>
 <hr>
 <!----------------Primera-Parte------------------------------------------->
@@ -75,7 +86,7 @@
         </div>
         <div id="contairner_Rutas" class="Columns_Items">
             <div id="rutas">
-                <a href="#" ><img src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/png-transparent-computer-icons-road-map-route-text-transport-sign-removebg-preview%20(2).png?raw=true" alt="Icono de Calendario" class="Icono_items" id="img_route"></a>
+                <a href="Buscar/" ><img src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/png-transparent-computer-icons-road-map-route-text-transport-sign-removebg-preview%20(2).png?raw=true" alt="Icono de Calendario" class="Icono_items" id="img_route"></a>
             </div>
             <h3 class="titulo_simple">Rutas</h3>
             <span class="texto_simple textos_items width_de_text" id="BAck_text">Aquí podrás previsualizar las distintas rutas disponibles, facilitándote elegir el mejor camino para llegar a tu destino.</span>
@@ -117,7 +128,7 @@
 <!----------------Ultima-Parte------------------------------------------->
 
 <footer id="pie_pagina" >
-    <img src="{% static 'Images/imagen_2024-05-30_130035889-removebg-preview (1).png' %}" alt="" style="margin-top: 20px;">
+    <img src="{% static 'Images/imagen_2024-05-30_130035889-removebg-preview (1).png' %}" id="patata" style="margin-top: 20px;">
     <div id="contactanos">
         <h2 class="titulo_simple ">Contáctanos</h3>
         <h4 class="texto_simple">chiloexplora@gmail.com</h4>
