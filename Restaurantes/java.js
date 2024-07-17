@@ -1,4 +1,4 @@
-var map = L.map('map').setView([-42.63053424118391, -74.10620686322511], 17); // inicializando el mapa centrado en "Parador Darwin"
+var map = L.map('map').setView([-42.62863645758797, -74.10592466486328], 17); // inicializando el mapa centrado en "Restauran"
 
 // Agregar capa base (esto va, si o si)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -10,9 +10,9 @@ var marker;
 var routingControl;
 
 
-// marcador que irá centrado en "Parador Darwin"
-marker = L.marker([-42.63053424118391, -74.10620686322511]).addTo(map)
-    .bindPopup("Parador Darwin").openPopup();
+// marcador que irá centrado en el restaurant
+marker = L.marker([-42.62863645758797, -74.10592466486328]).addTo(map)
+    .bindPopup("Restaurant: Raices Huilliches").openPopup();
         
 //funcion para agregar ruta
 function addRoute(start, end) {
@@ -42,7 +42,7 @@ function addRoute(start, end) {
 // boton "Generar ruta" evento
 document.getElementById('copiarRuta').addEventListener('click', () => {
     var cucao = [-42.63795, -74.10976];
-    var paradorDarwing = [-42.63053424118391, -74.10620686322511];
+    var paradorDarwing = [-42.62863645758797, -74.10592466486328];
     addRoute(cucao, paradorDarwing);
 });
 
