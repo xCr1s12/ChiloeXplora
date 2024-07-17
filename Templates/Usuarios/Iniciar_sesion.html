@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>ChiloeXplora</title>
+    <meta name="keywords" content="Proyecto integrador, ULAGOS ICINF, 2024">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/Iniciar_sesion.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="Encabezado">
+        <img id="Logo01"src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Pagina_Principal/Fotos/imagen_2024-05-30_130035889-removebg-preview%20(1).png?raw=true" alt="Logo">
+        <header id="menu-de-cabeza-1">   
+            <ul>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Herramientas">
+                        Herramientas
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="boton-menu-superior" id="Ayuda">
+                        Ayuda
+                    </a>
+                </li>
+    
+            </ul>
+            
+        </header>
+
+    </div>
+<!-------------Inicio-sesion------------>
+    <hr>
+    <div id="aa" style=" overflow: hidden;">
+       <img id="fondofoto" src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Inicio_de_sesion/Fotos/foto_muelle_is.jpg?raw=true"> 
+    <div class="inicio_de_sesion">
+        <img id="fotoicono" src="https://github.com/xCr1s12/ChiloeXplora/blob/main/Inicio_de_sesion/Fotos/Logo.png?raw=true">      
+        <div class="container">
+            <h1> Inicio de sesión </h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <span class="texto_simple">¿olvidaste tu contraseña??</span>
+                <input class="boton-1" type="submit" value="Iniciar sesión">
+            </form>
+            <div id="a1">
+                <div class="texto_simple">
+                    ¿Todavía no tiene una cuenta? 
+                </div> 
+                <a href="registro/" class="titulo_simple">Regístrese aquí </a>
+                
+            </div>
+        </div>
+    </div> 
+     
+    </div>
+    
+</body>
+</html>
+
+

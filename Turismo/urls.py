@@ -3,6 +3,6 @@ from .views import TurismoListViews
 
 app_name = 'Turismo'
 
-urlpatterns = {
+urlpatterns = [
     path("", TurismoListViews.as_view(), name="TurismoListViews"),
-}
+]

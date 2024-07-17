@@ -3,6 +3,6 @@ from .views import cucaoView
 
 app_name = 'cucao'
 
-urlpatterns = {
+urlpatterns = [
     path("", cucaoView.as_view(), name="Cucao") 
-}
+]

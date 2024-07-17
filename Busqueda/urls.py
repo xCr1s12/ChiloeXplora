@@ -3,6 +3,6 @@ from .views import Buscadorview
 
 app_name = 'Buscar'
 
-urlpatterns = {
+urlpatterns = [
     path("", Buscadorview.as_view(), name="Buscar") 
-}
+]

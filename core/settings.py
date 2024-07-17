@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'core',
     'Turismo',
     'cucao',
-    'Busqueda'
+    'Busqueda',
+    'Users',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +136,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+##Usuarios
+AUTH_USER_MODEL = 'Users.Usuario'
