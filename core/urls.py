@@ -15,6 +15,7 @@ urlpatterns = [
     path('login/registro/', user_views.registro_usuario, name='registro'),  
     path('login/', user_views.login_usuario, name='login'),
     path('logout/', user_views.logout_usuario, name='logout'),
+    path("actividades/", include("actividades.urls", namespace='actividades')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

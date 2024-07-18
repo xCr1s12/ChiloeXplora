@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Busqueda',
     'Users',
     'comentarios',
+    'actividades',
+    
 ]
 
 MIDDLEWARE = [
