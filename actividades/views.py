@@ -4,5 +4,7 @@ from django.views.generic import View
 # Create your views here.
 class actividad(View):
     def get(self, request, *args, **kwargs):
-        context = {}
+        context = {
+            
+        }
         return render(request, "Actividades/actividades.html", context)

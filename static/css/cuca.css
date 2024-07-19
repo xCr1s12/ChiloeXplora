@@ -220,6 +220,7 @@ hr {
 
 /* ############# Contenedor que tiene la info del mapa y sus rutas. ############## */
 .mapa {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     height: 900px;
@@ -228,6 +229,7 @@ hr {
     margin-top: -120px;
 }
 #titulo {
+    margin-top: 100px;
     color: #F9BC60;
     font-family: "Spinnaker";
     font-weight: bold;
@@ -271,7 +273,6 @@ hr {
     width: 600px;
     display: flex;
     align-self: flex-end;
-    margin-bottom: 185px;
     top: 0;
     right: 0;
 }
@@ -315,4 +316,15 @@ hr {
 #patata {
     height: 150px;
     width: 150px;
+}
+#mensaje_advertencia {
+    color: wheat;
+}
+#copiarRuta {
+    width: 150px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #F9BC60;
+    color: black;
+
 }
