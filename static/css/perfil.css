@@ -1,0 +1,275 @@
+/* Comentario */
+html,body{
+    background-color: #121629 ;
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Spinnaker",sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+ }
+ .Boton {
+    background-color: #F9BC60;
+    color: #fff;
+    font-family: "Spinnaker";
+ }
+
+ /* Encabezado */
+#Encabezado {
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#Logo01 {
+    margin-left: 3%;
+    border: 1px;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding:0;
+}
+ul li {
+    font-size: 15px;
+    font-family: "Spinnaker";
+    display: inline;
+}
+
+/* menu superior */
+.boton-menu-superior {
+    margin-left: 70%;
+    align-items: flex-start;
+    position: relative;
+    padding: 12px 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: medium;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.boton-menu-superior:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+}
+#Iniciar_Sesion{
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+#Iniciar_Sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
+
+/* Linea divisora */
+hr {
+    width: 100%;
+    height: 0.75px;
+    background: #fff;
+    border: none;
+    margin-top: 3px;
+}   
+
+/* Iniciar sesión */
+.Boton {
+    background-color: #F9BC60;
+    color: #fff;
+    font-family: "Spinnaker";
+ }
+ #Encabezado {
+    align-content: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#Logo01 {
+    margin-left: 3%;
+    border: 1px;
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+ul {
+    white-space: nowrap;
+    list-style: none;
+    padding:0;
+}
+ul li {
+    font-size: 15px;
+    font-family: "Spinnaker";
+    display: inline;
+}
+.boton-menu-superior {
+    margin-left: 70%;
+    align-items: flex-start;
+    position: relative;
+    padding: 12px 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: medium;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.boton-menu-superior:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+}
+#Iniciar_Sesion{
+    margin-left: 60%;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 127px;
+    height: 32px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+#Iniciar_Sesion:hover {
+    background:#F9BC60;
+    box-shadow: 0 0 10px #F9BC60, 0 0 40px #F9BC60, 0 0 70px #F9BC60;
+    transition-delay: 0.2ms;
+    cursor: pointer;
+}
+
+/*  Linea divisora        */
+hr {
+    width: 100%;
+    height: 0.75px;
+    background: #fff;
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+/* ######################################### DIVISION #########################################   */
+
+/* CONTENEDOR principal */
+#contenedor0{
+    display: flex;
+    flex-direction:row;
+    height: 35rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    gap: 15rem;
+    background-color: #004643;
+}
+
+/* imagen boceto de perfil */
+#img0{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    height: 30rem;
+    margin-left: 5rem;
+    
+}
+
+
+/* Segundo contenedor que lleva "Mi perfil y todo 'Hacia abajo' " */
+#contenedor1{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+
+/* Titulo "Mi Perfil" */
+
+#contenedor1 h1{
+    font-family: "Spinnaker";
+    font-size: 60px;
+    color: #abd1c6;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 0.8rem;
+
+}
+
+
+/* Titulo de "informacion" */
+#contenedor1 h3{
+    color: #abd1c6;
+    text-align: center;
+
+}
+
+/* Titulo de "Tu nombre:" */
+#contenedor1 #hnombre{
+    margin-top: 5rem;
+}
+
+/* Titulo de "Tu Correo:" */
+#contenedor1 #hcorreo{
+    margin-top: 3rem;
+}
+
+
+/* Contenedor Grande Secundario de "Mis herramientas" */
+
+#contenedor2{
+
+    
+}
+
+
+
+
+
+
+/* CONTENIDO DEL PIE DE PÁGINA   */
+
+.pie_de_pagina{
+    position: relative;
+    margin-top: 500px;
+}
+
+#pie_pagina{
+    margin-left: 20px;
+    height: 150px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+#contactanos {
+    margin-top: 10px;
+    line-height: 0.5;
+    margin-left: 20px;
+}
+#info {
+    margin-left: 60px;
+}
+
+.titulo_simple{
+    color: #F9BC60;
+    font-family: "Spinnaker";
+}
+
+.texto_simple{
+    color: #fff;
+    font-family: "Spinnaker";
+}
+
