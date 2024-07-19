@@ -171,12 +171,33 @@ hr {
     margin-bottom: 0;
 }
 /* Texto del titulo "cucao" (Litsto) */
-.boton_y_texto p {
+.boton_y_texto span {
     font-size: 28px;
     color: #fff;
     font-family: "Spinnaker";
     line-height: 1.3;
-    margin: 0;
+    margin-bottom: 20px;
+}
+#boton_lr {
+    margin-top: 10px;
+    z-index: 100;
+    background-color: #F9BC60;
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    font-family: "Spinnaker";
+    font-weight: bold;
+    color: #fff;
+    font-size: xx-large;
+    cursor: pointer;
+    margin-top: -20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+}
+#desc {
+    display: flex;
+    flex-direction: column;
 }
 /* Imagen que acompaña el texto de "cucao" (lista) */
 .imagen_iglesia {
@@ -196,19 +217,7 @@ hr {
     left: 1200px;
 }
 /* Boton para ir a Lugares Recomendados */
-#boton_lr {
-    z-index: 100;
-    background-color: #F9BC60;
-    border-radius: 10px;
-    height: 100px;
-    width: 400px;
-    font-family: "Spinnaker";
-    font-weight: bold;
-    color: #fff;
-    font-size: xx-large;
-    cursor: pointer;
-    margin-top: -20px;
-}
+
 /* ############# Contenedor que tiene la info del mapa y sus rutas. ############## */
 .mapa {
     display: flex;
@@ -272,7 +281,13 @@ hr {
     width: 100%;
 }
 
-
+#mapa_copiar{
+    display: flex;
+    flex-direction: column;
+    height: 685px;
+    width: 1100;
+    align-items: center;
+}
 
 #Comentario ::placeholder{
     background-color: white;
