@@ -144,3 +144,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ##Usuarios
 AUTH_USER_MODEL = 'Users.Usuario'
+
+SUPABASE_URL = os.environ.get('SUPABASE_URL')
+SUPABASE_KEY = os.environ.get('SUPABASE_KEY')
