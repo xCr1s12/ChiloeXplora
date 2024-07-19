@@ -16,6 +16,7 @@ urlpatterns = [
     path('login/', user_views.login_usuario, name='login'),
     path('logout/', user_views.logout_usuario, name='logout'),
     path("actividades/", include("actividades.urls", namespace='actividades')),
+    path('perfil/', include("perfil.url", namespace="perfil")),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
