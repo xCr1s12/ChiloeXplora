@@ -2,7 +2,6 @@ from pathlib import Path
 import os 
 import environ
 from dotenv import load_dotenv
-import dj_database_url
 
 
 load_dotenv()
@@ -80,20 +79,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-
-# Get the DATABASE_URL from environment variables
-DATABASE_URL = os.environ.get('DATABASE_URL')
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -151,6 +144,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ##Usuarios
 AUTH_USER_MODEL = 'Users.Usuario'
-
-SUPABASE_URL = os.environ.get('SUPABASE_URL')
-SUPABASE_KEY = os.environ.get('SUPABASE_KEY')
