@@ -174,7 +174,7 @@ hr {
     flex-direction:row;
     height: 35rem;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     gap: 15rem;
     background-color: #004643;
 }
@@ -231,14 +231,62 @@ hr {
 /* Contenedor Grande Secundario de "Mis herramientas" */
 
 #contenedor2{
-
-    
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+    width: 100%;
 }
 
+/* Vertical que contiene el titulo, la imagen y el subtitulo */
+#cont_vert1{
+    margin-right: 10rem;
+    background-color: #abd1c6;
+    display: flex;
+    flex-direction: column;
+}
 
+/* Imagen del "bloc de notas */
+#cont_vert1 img{
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    margin-bottom: 5rem;
+}
 
+/*Mini contenedor de la izquierda "Mis herramientas" */
+#mini_cont1{
+    height: 35rem;
+    width: 38.5rem;
+    background-color: #abd1c6;
+}
 
+/* Titulo "Herramientas" */
+#mini_cont1 h1{
+    margin-bottom: 0;
+    margin-top: 5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+/* Subtitulo "Notas" */
+#mini_cont1 h2{
+    margin-bottom: 0;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
 
+textarea {
+    color: #fff;
+    height: 34rem;
+    width: 65rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 25px;
+    resize: none;
+    background-color: #004643;
+    gap: 30++rem;
+}
 
 /* CONTENIDO DEL PIE DE PÁGINA   */
 
